@@ -86,7 +86,7 @@ class Extractor:
 class Similarity:
     vectorizer = TfidfVectorizer()
 
-    def __init__(self, legit_links, threshold=0.7):
+    def __init__(self, legit_links, threshold=0.6):
         self.legit_links = legit_links
         self.threshold = threshold
         self.legit_tokens = None
