@@ -4,11 +4,9 @@ from skimage.metrics import structural_similarity
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-def image_comperator(legit_adress='assets/alior-main-legit.png',
-                     scam_adress='assets/alior-scam.png',
-                     threshold=0.9):
-    scam = cv2.imread(scam_adress)
-    legit = cv2.imread(legit_adress)
+def image_comperator(legit_img, scam_img, threshold=0.9):
+    scam = scam_img
+    legit = legit_img
 
     blue_legit = cv2.calcHist([legit], [0], None, [256], [0, 256])
     red_legit = cv2.calcHist([legit], [1], None, [256], [0, 256])
