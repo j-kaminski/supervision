@@ -142,7 +142,7 @@ def main():
 
     sim = Similarity(legit_links_from_file, threshold=0.9)
 
-    url = '43434-login.tesia.xyz'
+    url = 'bank.pl'
 
     result = sim.get_best_match(url)
 
