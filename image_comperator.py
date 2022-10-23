@@ -23,7 +23,4 @@ def image_comperator(legit_img, scam_img, threshold=0.9):
     green_similarity = cosine_similarity([green_legit.flatten()],
                                          [green_scam.flatten()])
 
-    if np.mean([blue_similarity, red_similarity, green_similarity
-                ]) > threshold:
-        return 1
-    return 0
+    return np.mean([blue_similarity, red_similarity, green_similarity])
