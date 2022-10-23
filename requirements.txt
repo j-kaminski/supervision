@@ -1,7 +1,9 @@
 fastapi
 uvicorn[standard]
+numpy
 opencv-python
 scikit-image
+scikit-learn
 requests
 selenium==4.5.0
 scikit-learn==1.1.2

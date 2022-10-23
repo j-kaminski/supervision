@@ -85,8 +85,9 @@ class Extractor:
 class Similarity:
     vectorizer = TfidfVectorizer()
 
-    def __init__(self, legit_links):
+    def __init__(self, legit_links, threshold=0.7):
         self.legit_links = legit_links
+        self.threshold = threshold
         self.legit_tokens = None
         self.tfidf_matrix = None
         self.tfidf_vectorizer = None
@@ -95,13 +96,14 @@ class Similarity:
     def get_best_match(self, url):
         link = Tokenizer.tokenize_url(url)
         query = link[url]['tokens']
+        # TODO: dodanie to co paweł powiedział czyli ostatnie dwa tokeny najważniejsze (lub 3).
         query_tfidf = self.tfidf_vectorizer.transform([query])
         cos_sim = cosine_similarity(query_tfidf, self.tfidf_matrix)
         results = cos_sim[0:1].flatten()[1:]
         best_result_idx = results.argmax()
         score = results[best_result_idx]
-        link = self.get_link_by_idx(best_result_idx)
-        return link, score
+        link = self.get_link_by_idx(best_result_idx + 1)
+        return self.apply_threshold(link, score)
 
     def prepare_vectorizer(self):
         self.tfidf_vectorizer = TfidfVectorizer(analyzer='char')
@@ -115,8 +117,14 @@ class Similarity:
     def get_link_by_token(self, token):
         for k, v in self.legit_links.items():
             if v['tokens'] == token:
-                return self.legit_links[k]
+                return k
         return None
+
+    def apply_threshold(self, link, score):
+        if score >= .9:
+            return link, score
+        else:
+            return None, score
 
 
 def main():
@@ -133,7 +141,9 @@ def main():
 
     sim = Similarity(legit_links_from_file)
 
-    result = sim.get_best_match('spaceryk.pl')
+    url = 'bank.pl'
+
+    result = sim.get_best_match(url)
 
     print(result)
 
