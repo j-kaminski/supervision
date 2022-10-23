@@ -121,7 +121,7 @@ class Similarity:
         return None
 
     def apply_threshold(self, link, score):
-        if score >= .9:
+        if score >= self.threshold:
             return link, score
         else:
             return None, score
@@ -139,9 +139,9 @@ def main():
     # scam_links_from_url = Extractor.extract_links_from_file(scam_domains_file)
     legit_links_from_file = Extractor.extract_links_from_file(legit_domains_file)
 
-    sim = Similarity(legit_links_from_file)
+    sim = Similarity(legit_links_from_file, threshold=0.9)
 
-    url = 'bank.pl'
+    url = '43434-login.tesia.xyz'
 
     result = sim.get_best_match(url)
 
