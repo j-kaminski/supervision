@@ -1,4 +1,5 @@
-from json import loads
+from json import loads, dumps
+from multiprocessing import Pool
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -85,7 +86,7 @@ class Extractor:
 class Similarity:
     vectorizer = TfidfVectorizer()
 
-    def __init__(self, legit_links, threshold=0.7):
+    def __init__(self, legit_links, threshold=0.6):
         self.legit_links = legit_links
         self.threshold = threshold
         self.legit_tokens = None
@@ -141,7 +142,7 @@ def main():
 
     sim = Similarity(legit_links_from_file, threshold=0.9)
 
-    url = '43434-login.tesia.xyz'
+    url = 'bank.pl'
 
     result = sim.get_best_match(url)
 

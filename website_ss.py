@@ -13,7 +13,6 @@ def website_ss(url):
     options.add_argument('--disable-notifications')
     driver = webdriver.Chrome(options=options)
     driver.get(url)
-    # el = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '//button[text()="Zaakceptuj"]')))
     img = driver.get_screenshot_as_png()
     nparr = np.frombuffer(img, np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)

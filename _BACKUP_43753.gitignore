@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-.venv
-=======
-.venv/
-__pycache__/
-.ipynb_checkpoints/
-.vscode/
->>>>>>> 9519662 (dupa)
