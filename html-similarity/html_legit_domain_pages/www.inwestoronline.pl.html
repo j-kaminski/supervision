@@ -1,0 +1,529 @@
+<html><head><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/jquery.blockUI.min.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/jquery.autotab.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/jquery.sha1.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/jquery-ui-1.8.16.custom.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/underscore.string.min.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/jquery-migrate-1.4.1.min.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/jquery-1.9.1.min.js"></script><script src="https://www.inwestoronline.pl/cbm/resources/27.0.20220812102110/js/lib/underscore.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Santander Biuro Maklerskie | IOL2.0</title>
+
+
+
+<meta name="CSRF-TOKEN" content="c166dbc0-6ca1-43d0-a83d-55009f8de0b7">
+
+<link rel="shortcut icon" href="/cbm/resources/27.0.20220812102110/img/favicon.ico">
+
+<link rel="stylesheet" href="/cbm/resources/27.0.20220812102110/css/style.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="/cbm/resources/27.0.20220812102110/css/style-ie.css" />
+<![endif]-->
+<!--[if gte IE 9]>
+<link rel="stylesheet" type="text/css" href="/cbm/resources/27.0.20220812102110/css/style-ie9.css" />
+<![endif]-->
+
+<script src="/cbm/resources/27.0.20220812102110/js/lib/html5shiv.min.js"></script>
+<script src="/cbm/resources/27.0.20220812102110/js/lib/LAB.min.js"></script>
+<script>
+    (function () {
+
+        var retryEnable = function () {
+            if (!$("#nik-form a.navi.disabled").length) {
+                setTimeout(retryEnable, 2000);
+            } else {
+                //$("#nik-form a.navi.disabled").removeClass("disabled");
+                CII.flags.allScriptsLoaded = true;
+                $.ajaxSetup({
+                    headers: {
+                        'CSRF-TOKEN': $("meta[name='CSRF-TOKEN']").attr("content")
+                    }
+                });
+            }
+        };
+
+        if (typeof jQuery != 'function') {
+
+            var scIdx = self.location.href.indexOf(';');
+            if (top !== self || scIdx > 0) {
+                if (scIdx > 0) {
+                    top.location.replace(self.location.href.substr(0, scIdx));
+                } else {
+                    top.location.replace(self.location.href);
+                }
+            } else {
+                $LAB.setGlobalDefaults({
+                    BasePath: "/cbm/resources/27.0.20220812102110/js/",
+                    Debug: true
+                });
+                $LAB.script("lib/underscore.min.js")
+                    .script("lib/jquery-1.9.1.min.js")
+                    .script("lib/jquery-migrate-1.4.1.min.js")
+                    .wait()
+                    .script("lib/underscore.string.min.js")
+                    .script("lib/jquery-ui-1.8.16.custom.js")
+                    .script("lib/jquery.sha1.js")
+                    .script("lib/jquery.autotab.js")
+                    .script("lib/jquery.blockUI.min.js")
+                    .script("lib/jquery.form.js")
+                    .script("cii.base.js")
+                    .wait()
+                    .script("lib/jquery.ui.datepicker-pl.js")
+                    .script("lib/jquery.nicescroll.min.js")
+                    .script("libs-defaults.js")
+                    .script("cii.util.js")
+                    .wait(function () {
+                        CII.util.translate.loadData('/cbm/resources/json/translate');
+                        CII.util.translate.changeLanguage('pl');
+                    })
+                    .script("cii.navi.js")
+                    .wait()
+                    .script("cii.login.js")
+                    .wait()
+                    .script("lib/date.min.js")
+                    .script("lib/bigjs-5.2.2.min.js")
+                    .script("lib/number.fmt.js")
+                    .script("cii.help.js")
+                    .wait(function () {
+                        CII.flags = CII.flags || {};
+                        CII.flags.mainInitPassed = false;
+                        CII.flags.allScriptsLoaded = false;
+                        retryEnable();
+                    });
+            }
+
+        } else {
+            $(window).off("beforeunload");
+            CII.util.translate.changeLanguage('pl');
+            CII.flags = CII.flags || {};
+            CII.flags.mainInitPassed = false;
+            retryEnable();
+        }// koniec ifa
+
+    }());
+
+</script>
+
+ 
+
+    </head>
+    <body id="login-page">
+    <div id="container">
+
+
+
+
+
+<script>
+
+    (function () {
+        var scIdx = self.location.href.indexOf(';');
+
+        if (typeof CII != "undefined") CII.util.translate.changeLanguage('pl');
+
+        if (top !== self || scIdx > 0) {
+            if (scIdx > 0) {
+                top.location.replace(self.location.href.substr(0, scIdx));
+            } else {
+                top.location.replace(self.location.href);
+            }
+        }
+    }());
+
+</script>
+
+<div style="display: none;" id="ResponseMainMark"></div>
+<div id="browserNotification" style="display: none">
+    <div class="obsolete-browser-container">
+        <div>
+            <div class="help-line hmp-warning">
+                <div class="text">
+                    <div class="information-panel-icon primary">
+                        Serwis Inwestor online najlepiej działa w najnowszych i wspieranych przez nas przeglądarkach. Widzisz ten komunikat, ponieważ używasz niewspieranej przez nas przeglądarki. Korzystanie ze starej lub niewspieranej wersji przeglądarki nie jest bezpieczne. Nie wspieramy już przeglądarki Internet Explorer. <br>To Ty decydujesz, z której przeglądarki skorzystasz. Nasza rekomendacja: Upewnij się, że używasz najnowszej i wspieranej przez nas wersji przeglądarki internetowej.
+                   </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+<script>
+    if(window.ActiveXObject || "ActiveXObject" in window){
+        document.getElementById("browserNotification").style.display="block";
+    }
+</script>
+<div id="top">
+    
+    <h1><a id="logo" href="/cbm" tabindex="-1"><img src="/cbm/resources/27.0.20220812102110/img/logo.png" alt="logo.alt"></a>
+    </h1>
+    
+    <ul id="tools">
+
+        
+
+        <li class="language lang-pl">
+            <a class="navi" data-navi-id="language" data-navi-action="load" href="/cbm?locale=en" tabindex="3000">
+                <span>EN</span>Language
+            </a>
+        </li>
+        <li class="help">
+            <a data-navi-action="link" data-popup-width="null" class="navi " tabindex="3000" href="https://www.santander.pl/inwestor/inwestowanie-online/inwestor-online/pomoc" target="_blank">Pomoc</a>
+        </li>
+    </ul>
+</div>
+
+<div id="main">
+    <div id="side">
+        <div id="ads-login-left">
+            <div class="marketing-content"><div class="box linki">
+ <h2>Twoje bezpieczeństwo</h2>
+ <ul>
+  <li><a tabindex="-1" target="_blank" href="https://bm.santander.pl/inwestowanie-online/inwestor-
+online/bezpieczenstwo/bezpieczenstwo.html#tab_3">Parametry gwarantujące bezpieczną stronę</a>
+  </li>
+  <li><a tabindex="-1" target="_blank" href="https://bm.santander.pl/inwestowanie-online/inwestor-
+online/bezpieczenstwo/bezpieczenstwo.html#tab_1">Bezpieczeństwo usług</a>
+  </li>
+  <li><a tabindex="-1" style="color: red;" target="_blank" href="https://bm.santander.pl/inwestowanie-online/inwestor-
+online/bezpieczenstwo/bezpieczenstwo.html#tab_4">Zalecenia dla użytkowników</a>
+  </li>
+  <li><a tabindex="-1" target="_blank" href="https://www.santander.pl/inwestor/inwestowanie-online/inwestor-online/bezpieczenstwo#3=2">Hasło maskowane</a>
+  </li>
+  <li><a tabindex="-1" target="_blank" href="https://www.santander.pl/_fileserver/item/1502869">Instrukcja zmiany hasła</a>  
+  </li>
+ </ul>
+</div>
+<div class="box kontakty">
+ <ul>
+  <li style="background-image: url(https://www.inwestoronline.pl/r/res/archiwum/img/icon_analizy.png)">
+   <h2>Materiały analityczne</h2>
+   Dostępne po zalogowaniu <br>bezpośrednio po ich sporządzeniu
+   <br><a tabindex="-1" target="_blank" href="https://bm.santander.pl/analizy-i-komentarze/produkty-analityczne/analizy-i-komentarze-
+produkty-analityczne.html">więcej » </a>
+  </li>
+ </ul>
+</div>
+<div class="box kontakty">
+ <ul>
+  <li style="background-image: url(https://www.inwestoronline.pl/r/res/archiwum/img/icon_phone.png)">
+   <strong>Contact Center</strong>
+   <br>
+   <a tabindex="-1" target="_blank" href="https://www.santander.pl/inwestor/kontakt#6=2">801 36 46 
+36</a>
+  </li>
+  <!--
+  <li style="background-image: url(https://www.inwestoronline.pl/r/res/archiwum/img/icon_skype.png)">
+   <strong>Skype</strong>
+   <br />
+   <a tabindex="-1" href="skype:dm.inwestor?call">dm.inwestor</a>
+  </li>
+  -->
+  <li style="background-image: url(https://www.inwestoronline.pl/r/res/archiwum/img/icon_mobile.png)">
+   <strong>Inwestor mobile</strong>
+   <br>
+   <a tabindex="-1" href="https://bm.santander.pl/inwestowanie-online/inwestor-mobile/inwestor-mobile.html">Sprawdź i pobierz aplikację</a>
+  </li>
+  <li style="background-image: url(https://www.inwestoronline.pl/r/res/archiwum/img/icon_placowki.png)">
+   <strong>Placówki</strong>
+   <br>
+   <a tabindex="-1" target="_blank" href="https://bm.santander.pl/placowki">Santander Bank Polska S.A.<br>z dostępem do usług maklerskich</a>
+  </li>
+ </ul>
+</div>
+<div class="box kontakty">
+ <ul>
+  <li style="background-image: url(https://www.inwestoronline.pl/r/res/archiwum/img/icon_help.png)">
+   <strong>Pomoc</strong>
+   <br>
+   <a tabindex="-1" target="_blank" href="https://bm.santander.pl/przydatne-informacje/pytania-i-odpowiedzi/pytania-i-odpowiedzi.html">FAQ</a>
+   <br>
+   <a tabindex="-1" target="_blank" href="https://bm.santander.pl/informacje-o-santander-biuro-maklerskie/nowosci-i-aktualnosci/nowosci-i-aktualnosci.html#fatca">FATCA</a>
+   <br>
+   <a tabindex="-1" href="mailto:bm.inwestor@santander.pl">Napisz do nas</a>
+  </li>
+ </ul>
+</div>
+</div>
+        </div>
+    </div>
+    <div id="content-wrapper">
+        <div id="content">
+            
+            
+            
+
+
+
+
+
+
+<div id="login">
+	<h1>Logowanie <span>Krok 1 z 2</span></h1>
+	<noscript>
+		<ul class="login-info">
+			<li>Strona wymaga włączonej obsługi skryptów JavaScript.</li>
+		</ul>
+	</noscript>
+	 
+	<div id="login-inner">
+	
+		<noscript>
+		<form id="nik-form-nojs" action="" >
+			<label><strong>Wpisz login:</strong></label>
+			<input type="text" autocomplete="off" maxlength="8" disabled="disabled"/>
+			<a data-navi-action="custom" data-popup-width="null" class="navi button " href="#">Zaloguj</a>
+			
+			<br class="clearfix" />
+		</form>
+		</noscript>
+		
+		<form id="nik-form" style="display: block;" action="/cbm/login/nik" method="post">
+		
+			<div class="login-inner-left-container">
+				<label for="nik"><strong>Wpisz login:</strong></label>
+			</div>
+			
+			<div class="login-inner-right-container">
+				<input id="nik" name="nik" onkeydown="detectEnter(event);" type="text" value="" maxlength="8" autocomplete="off">
+				<div class="clearfix"></div>
+				<div>
+				<a data-navi-action="submit" data-popup-width="null" id="loginButton" class="navi button disabled" href="#">Dalej</a>
+				</div>
+			</div>
+		
+			
+			<br class="clearfix">
+			<div class="ta-right " style="line-height: 26px;">
+				<div class="border-top" style="margin: 5px 20px;"></div>
+				<a data-navi-action="load" data-popup-width="null" class="navi " style="float:left; margin: 0 20px;  font-weight: bold; font-size: 0.8em;" href="/cbm/login/generPIN">Nie pamiętasz hasła?</a>
+				
+				<span tabindex="0" style="margin: 0 20px; cursor:pointer;" onclick="return verisignPopup()" onkeydown="return detectEnterVerisign(event)" class="verisign-span">
+
+				</span>
+			</div>	
+			
+		</form>
+		
+		
+		<script type="text/javascript" language="JavaScript">//<![CDATA[
+
+		window.history.pushState(undefined, "", "/cbm/");
+
+		window.loginsemaphore = true;
+		                                                                
+			function detectEnter(event){
+				
+				if((('which' in event) ? event.which : event.keyCode) == 13){
+					if(event.preventDefault) event.preventDefault();
+					else event.returnValue = false;
+					
+					if((window.loginsemaphore) && (!$('.navi.button').hasClass('disabled'))){
+						
+						window.loginsemaphore = false;
+						$('.navi.button').focus().click();
+						$.blockUI();
+						
+					}
+					
+				}
+				
+			} 
+			
+			function detectEnterVerisign(event){
+				
+				if((('which' in event) ? event.which : event.keyCode) == 13){
+					if(event.preventDefault) event.preventDefault();
+					else event.returnValue = false;
+					verisignPopup();
+					}
+				
+			} 
+                           
+			
+			document.getElementById("nik-form").style.display='block';
+			document.getElementById("nik").focus();
+			document.getElementById("nik").focus();
+			
+			
+				function verisignPopup(){window.open("https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.inwestoronline.pl&lang=en",null,"location=yes,status=yes,resizable=yes,scrollbars=yes,width=560,height=500");
+				return false;
+				}
+				
+		/*$(document).ready(function(){
+			if(!!$(".login-info").length){
+				$("a.navi.button").removeClass("disabled");
+			}
+		});*/
+		
+		var readyToUnblock = false;
+		document.onreadystatechange = function () {
+			var state = document.readyState;
+			if(state == 'complete') {
+				readyToUnblock = true;
+			}
+		}
+	
+		function unblockButton() {
+			
+			if(typeof CII != "undefined" && typeof CII.flags != "undefined") {
+				
+				var loginInfoLength = document.querySelectorAll('.login-info').length;
+
+				//if((!!loginInfoLength || readyToUnblock == true) &&  CII.flags.allScriptsLoaded == true) {
+				if(CII.flags.allScriptsLoaded == true) {
+					clearInterval(unblockButtonInterval);
+					document.getElementById("loginButton").className = "navi button";
+					
+				}
+			}
+			
+		}
+		
+		var unblockButtonInterval = setInterval(unblockButton, 50);
+		
+		
+		//]]>		
+		</script>
+		
+	</div>
+</div>
+
+
+        </div>
+        <div id="ads-login-bottom">
+            <div class="marketing-content"><!--[if lt IE 8]>
+<div>
+<p style="color: red;font-size: 14px;"><b>Uwaga! Ta przeglądarka Windows Internet Explorer jest przestarzała i Inwestor online może 
+funkcjonować niepoprawnie. Wymagany jest Internet Explorer w wersji 8 lub nowszy.</b> <a href="http://windows.microsoft.com/pl-pl/internet-
+explorer/download-ie" target="_blank">Więcej na temat aktualizacji IE możesz znaleźć na stronie producenta.</a></p>
+</div>
+<![endif]-->
+<!--
+<div class="box">
+  <p style="color:red;">
+  <b>2020-04-27</b><br>
+<b>Informujemy o możliwych utrudnieniach w logowaniu do serwisu Inwestor online. <br><br>
+Pracujemy nad rozwiązaniem problemu.
+  </b>
+</p>
+</div>
+<div class="box">
+    <p style="color:red;">
+    <b>2020-04-14</b><br>
+  <b>Informujemy o usunięciu utrudnień w przekazywaniu zleceń na GPW.<br><br>
+  Przepraszamy za utrudnienia.</b>
+  </p>
+</div>
+<div class="box">
+	<p style="color:red;">
+	<b>Pracujemy nad usprawnieniami (1 października 2022 r.)</b></style></p>
+<p>Od 00:00 do 7:00 w sobotę usprawniamy nasze usługi. W tym czasie mogą wystąpić przerwy w dostępie do serwisu Inwestor online oraz aplikacji Inwestor mobile.<br />Dane w notowaniach przywrócimy w poniedziałek, 3 października, przed rozpoczęciem sesji giełdowej.<br />
+Przepraszamy za utrudnienia.
+  </p>
+  </div>
+<div class="box">
+	<p style="color:red;">
+	<b>Pracujemy nad usprawnieniami (24-25 czerwca 2022 r.)</b></p>
+<p>Od 23:00 w piątek do 7:00 w sobotę usprawniamy nasze usługi. W tym czasie mogą wystąpić przerwy w dostępie do serwisu Inwestor online oraz aplikacji Inwestor mobile.<br />Dane w notowaniach przywrócimy w poniedziałek, 27 czerwca, przed rozpoczęciem sesji giełdowej.<br />
+Przepraszamy za utrudnienia.
+  </p>
+  </div>
+<div class="box">
+  <p style="color:red;">
+  <b>2022-09-06</b><br>
+<b>Informujemy o możliwych utrudnieniach w logowaniu do serwisu Inwestor online z poziomu serwisu Santander Internet. <br><br>
+Pracujemy nad rozwiązaniem problemu.<br><br>
+Bezpośrednie logowanie do serwisu Inwestor online oraz aplikacji Inwestor mobile funkcjonuje prawidłowo.
+  </b>
+</p>
+</div>
+-->
+<div class="box">
+	<p><b>Nowa wersja aplikacji Inwestor mobile</b><br></p>
+    Udostępniliśmy nową wersję aplikacji Inwestor mobile (2.4.5) w Sklep Play oraz App Store. Zachęcamy do aktualizacji. <br>
+  <br>
+  </div> 
+<div class="box" style="padding: 1em;">
+ <p>
+  <strong>Jak zostać Klientem serwisu Inwestor online?</strong>
+ <br>
+Otwórz rachunek w jednej z naszych <a tabindex="-1" target="_blank" href="https://bm.santander.pl/placowki">placówek</a>. Jeśli jesteś już klientem Santander Bank Polska S.A., możesz otworzyć rachunek maklerski w Santander internet. <a tabindex="-1" target="_blank" href="https://www.santander.pl/klient-indywidualny/oszczednosci-i-inwestycje/rachunek-maklerski-standard#jak-zamowic">Więcej » </a>  
+ </p>
+</div>
+<div class="box" style="padding: 1em;">
+<p>
+ <strong>Warto wiedzieć</strong>
+ <br>
+ Korzystanie z serwisu możliwe jest po zawarciu Umowy o świadczenie usług maklerskich z Santander Biuro Maklerskie. Szczegółowe informacje 
+dostępne są:<br>
+- na stronie serwisu ogólnodostępnego w zakładce <a tabindex="-1" target="_blank" href="https://bm.santander.pl/inwestowanie-
+online/inwestowanie-online.html"><u>Inwestowanie online</u></a>,<br>
+- w każdym Punkcie Usług Maklerskich Santander Biuro Maklerskie, których wykaz znajduje się na stronie serwisu ogólnodostępnego w opcji <a tabindex="-1" target="_blank" href="https://bm.santander.pl/placowki"><u>Placówki</u></a>,<br>
+- w Zespole Contact Center tel. 801 36 46 36 lub 61 856 44 44 (koszt połączenia zgodny z taryfą operatora), wybierając opcję 4, w dni 
+robocze w godzinach 8:00-16:00, e-mail: <a tabindex="-1" href="mailto: bm.inwestor@santander.pl"><u> bm.inwestor@santander.pl</u></a>
+</p>
+</div>
+<div class="box" style="padding: 1em;">
+ <p>
+  <strong>Uwaga!</strong>
+  <br>
+Zawsze sprawdzaj adres i certyfikat strony, na której wprowadzasz kody dostępowe (login, hasło), zwłaszcza jeśli link do strony prowadzi z 
+wiadomości e-mail. Szczegóły dotyczące bezpiecznego korzystania z Inwestora online znajdziesz w ramce Twoje bezpieczeństwo. W razie 
+wątpliwości prosimy o kontakt na adres <a tabindex="-1" href="mailto: bm.inwestor@santander.pl"><u>bm.inwestor@santander.pl</u></a><br><br>
+Trzykrotne podanie błędnego hasła powoduje blokadę dostępu do serwisu Inwestor online/mobile. Odblokowanie nastąpi po wpisaniu loginu i kodu odblokowującego PUK (kod PUK otrzymali Państwo razem z PIN startowy). Jeśli nie pamiętają Państwo swojego kodu PUK, w celu odblokowania 
+dostępu do serwisu Inwestor online/mobile proszę skontaktować się z naszym pracownikiem od godziny 8.00 do godziny 19.00 w dni robocze pod 
+numerem telefonu 801 36 46 36 lub 61 856 44 44 (koszt połączenia zgodny z taryfą operatora).
+ </p>
+ </div>
+ <div class="box" style="padding: 1em;">
+ <p>
+  <strong>801 36 46 36 - telefon czynny w dni robocze w godzinach 8:00-19:00, koszt połączenia zgodny z taryfą operatora</strong>
+  <a tabindex="-1" target="_blank" href="#"></a>
+ </p>
+</div>
+<div class="box" style="padding: 1em;">
+ <p>
+   Na tej stronie internetowej korzystamy z plików cookies, które zapisujemy w pamięci przeglądarki internetowej. O szczegółach dowiesz się <a href="https://www.santander.pl/przydatne-informacje/informacje-o-plikach-cookie" target="_blank">tutaj</a>.
+  <a tabindex="-1" target="_blank" href="#"></a>
+ </p>
+</div>
+<div class="box" style="padding: 1em;">
+ <p>
+   </p><p>
+Transakcje poza rynkiem regulowanym <a tabindex="-1" target="_blank" href="https://www.santander.pl/_fileserver/item/1510621">(PDF)</a>
+</p>
+<!--
+<p>
+<a tabindex="-1" target="_blank" href="https://inwestor.santander.pl/gielda/transakcje-stabilizujace.html" 
+target=_blank>Transakcje stabilizujące</a>
+</p></a>
+-->
+ <p></p>
+</div>
+</div>
+        </div>
+    </div>
+    <div id="right-side">
+        <div id="ads-login-right">
+            <div class="marketing-content"><div class="marketing-content" style="width: 225px;">
+	<div>
+    		<a tabindex="-1" target="_blank" href="https://www.santander.pl/inwestor/aktualnosci/aktualnosci-lista/rentownosc-rynek360">
+			<img src="https://www.inwestoronline.pl/r/res/archiwum/media_graf/rentownosc_logowanie.jpg" target="_blank" width="255">
+		</a>
+	</div>
+</div>
+</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div id="footer">
+    <p>Santander Biuro Maklerskie jest wyodrębnioną organizacyjnie jednostką Santander Bank Polska S.A. z siedzibą w Warszawie, przy al. Jana Pawła II 17, 00-854 Warszawa, zarejestrowanego w Sądzie Rejonowym dla m. st. Warszawy w Warszawie, XIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod nr. KRS 0000008723, NIP: 896-000- 56-73, wysokość kapitału zakładowego 1 021 893 140 zł, wysokość kapitału wpłaconego 1 021 893 140 zł.</p>
+</div>
+
+
+
+    </div>
+    
+    
+
+
+
+
+
+</body></html>

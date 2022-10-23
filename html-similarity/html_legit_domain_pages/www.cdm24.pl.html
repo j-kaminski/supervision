@@ -1,0 +1,289 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>CDM24 – Biuro Maklerskie Pekao</title>
+	<meta name="description" content="CDMInternet, CDM24, system dedykowany dla klientów indywidualnych, dostęp przez Internet, telefon stacjonarny oraz komórkowy.">
+
+	<meta name="language" content="pl">
+	<meta name="revisit-after" content="2 days">
+	<meta name="robots" content="noodp,noarchive">
+	<meta name="url" content="http://www.pekao24.pl">
+
+
+	<style type="text/css">@import url('/MCP/client/logon/_css_red/style.css');</style>
+	<!--[if lte IE 7]><style type="text/css">@import url('/MCP/client/logon/_css_red/ie.css');</style><![endif]-->
+	<style type="text/css">@import url('/MCP/client/logon/_css/thickbox.css');</style>
+
+    <!--[if IE 8]><style type="text/css">@import url('/MCP/client/logon/_css_red/ie8.css');</style><![endif]-->
+    <style type="text/css">@import url('/MCP/client/logon/_css/firefox.css');</style>
+	<style>
+		.text h2 {
+			line-height: 110% !important;
+		}
+		
+		.logowanie {
+			height: auto !important;
+		}
+		
+		#fixLogowanie .btn_submit {
+			float: left;
+			margin-bottom: 10px !important;
+			margin-left: 20px !important;
+		}
+		
+		#fixLogowanie:nth-child(2) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		
+		.centerLogowanie {
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold !important;
+			line-height: 110% !important;
+		}
+		
+		.linksLogowanie {
+			width: 100%;
+			display: flex;
+		}
+		
+		.linksLogowanie a {
+			font-size: 13px;
+			text-align: center;
+			flex: 1 0 0;
+		}
+		.disabled-link {
+			pointer-events: none;
+		}
+	</style>
+	
+	<script src="/MCP/client/logon/_js/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/thickbox.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/LogonSlider.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/HelpAccordion.js" type="text/javascript"></script>
+    <script src="/MCP/client/logon/_js/errtip.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/redirections.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		var BackText = "Cofnij";
+		var ConfirmText = "Zatwierdź";
+    </script>
+
+	<script src="/MCP/client/logon/_js/CookiesInfo.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/NumericKeyboard.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/LoginScriptsCdmMigration.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/_js/LoginScriptsStep1CdmMigration.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			InitLogonSlider("naviSlide", "tabSlider", 8000);	
+            errtip.initLogon(".questionMark");
+			setRedirectId();
+		});
+		var msgValidStringError = "Proszę podać numer klienta!";
+		var msgLengthError = "Długość numeru klienta jest nieprawidłowa!";
+		var msgIsNanError = "W tym polu można wpisywać tylko liczby!";
+		var preview = "";
+		var language = "PL";
+		var source = "cdm";
+	</script>
+	<script src="/MCP/client/logon/cms/DisplayNews.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/cms/DisplayPictures.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/cms/DisplaySafety.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/cms/DisplayBanner.js" type="text/javascript"></script>
+	<script src="/MCP/client/logon/cms/DisplayInaccessibility.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="cookiesInfoWrapper">
+		<div id="cookiesInfo">
+			<div id="textContainer">
+				<p>
+					W ramach naszej witryny stosujemy pliki cookies. Korzystanie z witryny bez zmiany ustawień przeglądarki oznacza, że akceptują Państwo
+					otrzymywanie cookies. W dowolnej chwili możecie Państwo dokonać zmiany ustawień dotyczących plików cookies. Więcej informacji o <a class="privacy ext" title="Polityka Prywatności" href="http://www.cdmpekao.com.pl/o-nas/polityka-prywatnosci">polityce prywatności.</a>
+				</p>
+			</div>
+			<div id="closeContainer">
+				<a class="btnBlue btnBlueClose" href="#" onclick="javascript:cookiesInfoOff('CDM24_COOKIES_INFO', 1, 360)"> <span>Zamknij</span></a>
+			</div>
+		</div>
+	</div>
+    <div id="header">
+        <h1 id="logoPekao24"><span>CDM24</span><img src="/MCP/client/logon/_img_red/_layout/logo_CDM24.gif?20190901000000" alt="CDM24"></h1>
+        <ul class="tabs">
+            <li class="selected"><span title="CDMInternet">CDMInternet</span></li>            
+        </ul>
+        <a class="homePage ext" href="http://www.cdmpekao.com.pl/" title="Strona główna BM (dawniej CDM Pekao S.A.)" accesskey="e">Strona główna BM (dawniej CDM Pekao S.A.)</a>
+        <a class="lang langEn" href="ClientLogonUK.html" title="English version" accesskey="e">English version</a>
+		<p class="btnHugeBanner inHeader" id="banner"></p>
+	</div>
+
+    <div id="content" class="logIn" style="margin:0 auto 0px">
+        <div id="left" style="width: 130px;"></div>
+	    <div id="middle" style="margin-left: auto; margin-right: auto; width: 660px">
+			<div class="text">
+				<h2 class="centerLogowanie" style="color:red;"><b>ZAKOŃCZYLIŚMY PROCES POŁĄCZENIA CDM PEKAO ORAZ BM PEKAO</b></h2>
+				<h2>Twój rachunek inwestycyjny został bezpieczenie przeniesiony do nowego systemu.</h2>
+				<h2 class="centerLogowanie" style="margin-top: 3em;"><b>ZALOGUJ SIĘ UŻYWAJĄC NOWYCH DANYCH DO LOGOWANIA</b></h2>
+				<h2>10-cio cyfrowy numer klienta i PIN wysłaliśmy do Ciebie pocztą, w dwóch oddzielnych listach.</h2>
+			</div>
+			<div class="frame frmClientLogon blueInfo accountNo numKeyPnl">
+				<!-- FORM1 -->
+				<form action="https://www.pekao24.pl/logowanie">
+					<!--onsubmit="return frmClientLogon_onsubmit()"-->
+					<fieldset class="fieldsetBlue" id="fixLogowanie">
+						<div class="h2">
+							<h2 class="logowanie">
+								<span style="font-size: 24px; line-height: 30px;">Zaloguj się i korzystaj ze swojego rachunku inwestycyjnego</span>
+							</h2>
+							<div class="cl">&nbsp;</div>
+						</div>
+						<br>
+						
+						<span class="btn_submit white">
+							<em class="left" "="">&nbsp;</em>
+							<input type="submit" id="butLogin" name="butLogin" value="Dalej" title="Dalej" tabindex="3">
+							<em class="right">&nbsp;</em>
+						</span>
+					
+					
+					</fieldset>
+				</form>
+				<div class="cl">&nbsp;</div>
+			</div>
+			<div class="text">
+				<h2 class="centerLogowanie" style="margin-top: 3em;"><b>Nie masz nowego numeru klienta lub nie posiadasz PIN</b></h2>
+				<h2>Skorzystaj ze swoich dotychczasowych danych logowania do CDM24 i dowiedz się jak zalogować się do swojego rachunku inwestycyjnego.</h2>
+			</div>
+			<div class="frame frmClientLogonCdm1 blueInfo accountNo numKeyPnl">
+				<!-- FORM2 -->
+				<form id="frmClientLogonCdm1" name="frmClientLogonCdm1" method="post" action="/MCP/CDMPINVerification.htm">
+					<fieldset class="fieldsetBlue">
+						<div class="h2">
+							<h2 class="logowanie">
+								<span style="font-size: 24px; line-height: 30px;">Zaloguj się do CDM24 i poznaj nowy numer klienta oraz hasło do nowego systemu</span>
+							</h2>
+							<div class="cl">&nbsp;</div>
+						</div>
+						<label for="parUsername" class="roundCorners">
+							<span class="clientNo">Numer klienta</span>
+							<span class="questionMark">
+                                <a href="javascript:void(0)">[?]</a>
+                                <div class="tooltipContent">Numer klienta (Identyfikator) jest to unikalny 12-cyfrowy numer przypisany do każdego Klienta BM Pekao, używany do logowania w internetowych serwisach transakcyjnych BM, obsłudze telefonicznej oraz bezpośredniej w Punktach Usług Maklerskich BM Pekao. Numer  znajdziesz na umowie swojego rachunku inwestycyjnego.<br><br>
+								Możesz także posługiwać się skróconą wersją swojego numeru klienta tzn. pomijając początkową cyfrę 8 i następujące zera np. zamiast 800000123456 wystarczy wpisać 123456.<br><br>
+								Jeśli nie pamiętasz swojego numeru klienta (Identyfikatora):<br>
+								* zadzwoń do konsultanta TeleCDM pod numer 801 140 490 (opłata za jeden impuls) lub +48 22 591 24 90 (stawka wg taryfy operatora) w dni robocze w godzinach 8:00 – 20.00,<br>
+								* lub udaj się do dowolnego Punktu Usług Maklerskich BM Pekao</div>
+                            </span>
+							<div class="cl">&nbsp;</div>
+							<span class="round first">&nbsp;</span><input type="text" value="" id="parUsername" name="parUsername" onkeydown="return checkIfEnter('frmClientLogonCdm1',event)" maxlength="12" tabindex="1" class="numKeyInput autocompleteOff" autocomplete="off"><span class="round last">&nbsp;</span>
+							<input type="hidden" name="parSyncToken">
+							<input type="hidden" name="parBrowserName" value="">
+							<input type="hidden" name="parLanguage" value="PL">
+							
+							<span class="btn_submit white">
+                                <em class="left">&nbsp;</em>
+                                <input type="button" id="butLogin" name="butLogin" value="Dalej" title="Dalej" tabindex="3" onkeypress="checkIfEnter('frmClientLogonCdm1',event);return false;" onclick="javascript:submitForm('frmClientLogonCdm1',event);return false;">
+                                <em class="right">&nbsp;</em>
+                            </span>
+						</label>
+						<a href="#" class="keyboard numKey" title="Klawiatura" accesskey="k" tabindex="2"><span>Klawiatura</span></a>
+					</fieldset>
+				</form>
+				<div class="cl">&nbsp;</div>
+			</div>
+			<div class="linksLogowanie">
+				<a href="https://www.cdm24.pl/MCP/Share/DOWNLOAD/20210614-instrukcja-przejscie-z-serwisu-cdminternet-do-pekao24-1.pdf" target="_blank">Zobacz instrukcję &gt;</a>
+				<a href="https://www.pekao.com.pl/biuro-maklerskie/integracja-dzialalnosci-maklerskiej/wprowadzenie.html" target="_blank">Więcej na temat połączenia &gt;</a>
+			</div>
+			<br>
+			<br>
+			<div class="text">
+				<h2 class="centerLogowanie" style="margin-top: 3em;">Zamknąłeś rachunek w CDM Pekao<br> w okresie od 03.01.2018 r. do 02.07.2021 r.<br> i chcesz sprawdzić dokumenty do rachunku?</h2>
+				<h2>Zaloguj się do serwisu używając danych do CDM24</h2>
+			</div>
+			<div class="frame frmClientLogonCdm2 blueInfo accountNo numKeyPnl">
+				<form id="frmClientLogonCdm2" name="frmClientLogonCdm2" method="post" action="/MCP/CDMPINVerification.htm">
+					<fieldset class="fieldsetBlue">
+						<div class="h2">
+							<h2 class="logowanie">
+								<span style="font-size: 24px; line-height: 30px;">Numer klienta CDM24</span>
+							</h2>
+                            <div class="cl">&nbsp;</div>
+                        </div>
+                        <label for="parUsername" class="roundCorners">
+                            <span class="clientNo">Numer klienta</span>
+                            <span class="questionMark">
+                                <a href="javascript:void(0)">[?]</a>
+                                <div class="tooltipContent">Numer klienta (Identyfikator) jest to unikalny 12-cyfrowy numer przypisany do każdego Klienta BM Pekao, używany do logowania w internetowych serwisach transakcyjnych BM, obsłudze telefonicznej oraz bezpośredniej w Punktach Usług Maklerskich BM Pekao. Numer  znajdziesz na umowie swojego rachunku inwestycyjnego.<br><br>
+								Możesz także posługiwać się skróconą wersją swojego numeru klienta tzn. pomijając początkową cyfrę 8 i następujące zera np. zamiast 800000123456 wystarczy wpisać 123456.<br><br>
+								Jeśli nie pamiętasz swojego numeru klienta (Identyfikatora):<br>
+								* zadzwoń do konsultanta TeleCDM pod numer 801 140 490 (opłata za jeden impuls) lub +48 22 591 24 90 (stawka wg taryfy operatora) w dni robocze w godzinach 8:00 – 20.00,<br>
+								* lub udaj się do dowolnego Punktu Usług Maklerskich BM Pekao</div>
+                            </span>
+                            <div class="cl">&nbsp;</div>
+                            <span class="round first">&nbsp;</span><input type="text" value="" id="parUsername" name="parUsername" onkeydown="return checkIfEnter('frmClientLogonCdm2',event)" maxlength="12" tabindex="1" class="numKeyInput autocompleteOff" autocomplete="off"><span class="round last">&nbsp;</span>
+                            <input type="hidden" name="parSyncToken">
+                            <input type="hidden" name="parBrowserName" value="">
+                            <input type="hidden" name="parLanguage" value="PL">
+                            <span class="btn_submit white">
+                                <em class="left">&nbsp;</em>
+                                <input type="button" id="butLogin" name="butLogin" value="Dalej" title="Dalej" tabindex="3" onkeypress="checkIfEnter('frmClientLogonCdm2',event);return false;" onclick="javascript:submitForm('frmClientLogonCdm2', event);return false;">
+                                <em class="right">&nbsp;</em>
+                            </span>
+                        </label>
+                        <a href="#" class="keyboard numKey" title="Klawiatura" accesskey="k" tabindex="2"><span>Klawiatura</span></a>
+                    </fieldset>
+                </form>
+                <div class="cl">&nbsp;</div>
+            </div>
+        </div>
+        <div id="right"></div>
+    </div>
+    <div id="footer" class="noborder">
+        <ul class="tabs">
+            <li class="selected">
+                <span id="kontakt_Pekao24_Makler" accesskey="9" title="Kontakt do CDM24">Kontakt do CDM24</span>
+            </li>
+        </ul>
+        <div id="kontakt_Pekao24_Makler">
+            <div class="box boxVerisign noMarginLeft" style="width:115px;">
+                <a class="ext" href="http://www.cdmpekao.com.pl/"><img src="/MCP/client/logon/_img_red/_layout/aurochs.gif?1496921611621"></a>
+            </div>
+            <div class="box boxVerisign noMarginLeft" style="width:165px;">
+                <p class="title pekao24Mobile"><strong>TeleCDM</strong></p>
+                <p>801 140 490<br>+48 22 591 24 90</p>
+            </div>
+            <div class="box small_margin">
+                <p title="CDMInternet" class="title pekao24Mobile"><strong>CDMInternet</strong></p>
+                <p>801 110 502, +48 22 591 25 95<br>serwis informacyjny, pomoc techniczna</p>
+            </div>
+            <div class="box boxVerisign">
+                <p title="CDMMobile" class="title pekaoSms"><strong>CDMMobile</strong></p>
+                <p>+48 22 591 24 90<br>pomoc techniczna</p>
+            </div>
+            <div class="box boxVerisign">
+                <p class="title email"><strong>E-mail</strong></p>
+                <p><a accesskey="9" href="mailto:infocdm@pekao.com.pl">infocdm@pekao.com.pl</a></p>
+            </div>
+            <div class="box small_verisign">
+                <script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=www.cdm24.pl&amp;size=S&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script>
+            </div>
+        </div>
+        <div class="footer_down">
+            <address>
+                <a href="http://www.cdmpekao.com.pl/o-nas/polityka-prywatnosci" title="Polityka Prywatności" class="privacy ext">Polityka Prywatności</a>
+                | Copyright © 2008-<script type="text/javascript">document.write(new Date().getFullYear());</script>2022
+                <a href="http://www.pekao.com.pl/" title="Bank Pekao S.A." accesskey="1" class="ext">Bank Pekao S.A.</a>
+            </address>
+            <ul>
+                <li><a href="http://www.cdmpekao.com.pl" title="BM Pekao (dawniej CDM Pekao S.A.)" class="ext">BM Pekao (dawniej CDM Pekao S.A.)</a></li>
+                <li><a href="http://www.pekao.com.pl" title="Bank Pekao S.A." class="ext">Bank Pekao S.A.</a></li>
+                <li><a href="http://www.pekao.com.pl/biuro-maklerskie" title="Biuro Maklerskie Pekao" class="ext">Biuro Maklerskie Pekao</a></li>
+                <li><a href="http://www.pekaotfi.pl" title="Pekao TFI S.A." class="ext">Pekao TFI S.A.</a></li>
+                <li><a href="https://www.pekao.com.pl/o-banku/stopka/rodo.html" title="RODO" class="ext">RODO</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body></html>

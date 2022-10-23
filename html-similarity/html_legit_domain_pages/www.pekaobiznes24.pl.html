@@ -1,0 +1,2201 @@
+<html class="loginPage" id="/jsp/login/LoginAlias.jsp"><head>
+    <title>Bank Pekao SA</title>
+    <meta charset="iso-8859-2">
+    <meta name="description" content="PekaoBiznes24 - platforma transakcyjna dla Klientów Korporacyjnych">
+    <meta name="keywords" content="PekaoBiznes24, Bankowość elektroniczna, Bankowość internetowa, Platforma transakcyjna system dedykowany dla klientów korporacyjnych, dostęp przez Internet, telefon stacjonarny oraz komórkowy, biometryka">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <link rel="icon" type="image/x-icon" href="../pb24/_img/favicon.ico?v=2">
+    <link rel="shortcut icon" href="../pb24/_img/favicon.ico?v=2">
+    <style type="text/css">@import url('../pb24/_css/bootstrap-3.4.1.min.css');</style>
+    <style type="text/css">@import url('../pb24/_css/global-new-visualisation.css');</style>
+    <style type="text/css">@import url('../pb24/_css/security.css');</style>
+    <style type="text/css">@import url('../pb24/_css/mask.css');</style>
+    <style type="text/css">@import url('../pb24/_css/login-banner.css');</style>
+    <style type="text/css">@import url('../pb24/_css/select-system.css');</style>
+    <style type="text/css">@import url('../pb24/_css/contact.css');</style>
+    <style type="text/css">@import url('../pb24/_css/footer.css');</style>
+    <style type="text/css">@import url('../pb24/_css/sprites.css');</style>
+    <style type="text/css">@import url('../pb24/_css/privacy-policy.css');</style>
+    <!--[if lte IE 8]><style type="text/css">@import url('../pb24/_css/ie8.css');</style><![endif]-->
+    <!--[if lte IE 9]><style type="text/css">@import url('../pb24/_css/ie9.css');</style><![endif]-->
+</head>
+
+    
+
+<body class="full-height">
+<div id="page">
+    <div id="header" class="row align-items-start justify-content-between">
+        <div class="col-xs-4">
+            
+            <h1 class="logo">
+                <a href="login" title="S:v-051"><span>PekaoBiznes24</span></a>
+            </h1>
+        </div>
+        <div class="col-xs-8">
+            <form name="LangSelectForm" method="POST" action="/do/LangSelect"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="b97f28f4644240a78add41d542f120f7"></div>
+                <input type="hidden" name="P_LNG_ID" value="">
+                
+            </form>
+
+            
+            <a href="javascript:document.forms['LangSelectForm'].P_LNG_ID.value='1'; document.forms['LangSelectForm'].submit();" class="lang pull-right">
+                <div class="pull-right language-1"></div>
+            </a>
+            
+
+            
+                <button class="demo pull-right" onclick="location.href='../do/firstLogin';" style="">Pierwsze logowanie</button>
+            
+
+            
+
+            <div class="cl">&amp;$160;</div>
+        </div>
+    </div>
+
+    <div id="content" class="auth-box login-form row align-items-start">
+<style type="text/css">
+    @import url('../pb24/_css/disabledButton.css?v=');
+    @import url('../pb24/_css/loginAlias.css?v=');
+</style>
+<script src="../js/validation.js?v=" type="text/javascript"></script>
+<script type="text/javascript" language="Javascript1.1"> 
+
+<!-- Begin 
+
+    var bCancel = false; 
+
+    function validateLoginAliasForm(form) { 
+        if (bCancel) { 
+            return true; 
+        } else { 
+            var formValidationResult; 
+            formValidationResult = validateRequired(form) && validateMaxLength(form) && validateMinLength(form) && validateMask(form); 
+            return (formValidationResult); 
+        } 
+    } 
+
+    function LoginAliasForm_required () { 
+     this.a0 = new Array("p_alias", "Proszę wpisz swój identyfikator.", new Function ("varName", "this.minlength='4'; this.maxlength='20'; this.mask=/^[a-zA-Z0-9_\\s]*$/;  return this[varName];"));
+    } 
+
+    function LoginAliasForm_maxlength () { 
+     this.a0 = new Array("p_alias", "Identyfikator nie może mieć więcej niż 20 znaków.", new Function ("varName", "this.minlength='4'; this.maxlength='20'; this.mask=/^[a-zA-Z0-9_\\s]*$/;  return this[varName];"));
+    } 
+
+    function LoginAliasForm_minlength () { 
+     this.a0 = new Array("p_alias", "Identyfikator musi mieć przynajmniej 4 znaków.", new Function ("varName", "this.minlength='4'; this.maxlength='20'; this.mask=/^[a-zA-Z0-9_\\s]*$/;  return this[varName];"));
+    } 
+
+    function LoginAliasForm_mask () { 
+     this.a0 = new Array("p_alias", "Pole 'Identyfikator' zawiera niedozwolone znaki.", new Function ("varName", "this.minlength='4'; this.maxlength='20'; this.mask=/^[a-zA-Z0-9_\\s]*$/;  return this[varName];"));
+    } 
+
+
+//End --> 
+</script>
+
+
+
+<form name="LoginAliasForm" method="post" action="/do/LoginAlias" onsubmit="return validateLoginAliasForm(this);" target="_top"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="b97f28f4644240a78add41d542f120f7"></div>
+    <input type="hidden" name="userBrowserInternetExplorer" value="false">
+    <input type="hidden" name="deviceFingerprint" value="926495ac-f807-41eb-82b8-d5d1b85b4ca0" id="deviceFingerprint">
+    <div class="col-12">
+        <div class="login-box">
+            <span class="avatar-empty"></span>
+            <div class="login">
+                <div class="login-title-new">
+                    <span>Logowanie do PekaoBiznes24</span>
+                </div>
+                <input onkeyup="changeButtonStyle()" onpaste="setTimeout(changeButtonStyle, 0)" placeholder="Identyfikator" autocomplete="off" type="text" id="p_alias" name="p_alias" value="">
+                <div class="newVisualizationKeyboardIconWrappper">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <div class="wrapKeyboard" onclick="initKeyboard(&quot;p_alias&quot;,&quot;&quot;,&quot;loginAliasButtonNext&quot;, &quot;changeButtonStyle&quot;);">
+            <a href="javascript:void(0);" alt="Klawiatura" class="keyboard" rel="p_alias">&nbsp;</a>
+        </div>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-centered">
+        <div class="col-xs-8 col-centered action">
+            <button id="loginAliasButtonNext" class="disabled" disabled="disabled">
+                Dalej
+            </button>
+        </div>
+    </div>
+    <div class="row-centered">
+        <div class="col-xs-8 col-centered action">
+            <div class="newVisualizationKeyboardWrappper">
+                
+
+
+
+
+
+
+<div id="keyboard">
+    <div class="keyboardStyle">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="`">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="~" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="1">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="!" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="2">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="@" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="3">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="#" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="4">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="$" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="5">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="%" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="6">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="^" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="7">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="&amp;" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="8">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="*" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="9">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="(" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="0">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value=")" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="-">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="_" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="=">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="+" style="display:none;">
+
+        <input type="button" class="keyboardSpecialButton keyboardButtonBackspace" id="btnBackspace" value="BckSpc">
+        <input type="button" class="keyboardSpecialButton keyboardButtonTab" id="btnTab" value="Tab">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="q">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="Q" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="q" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Q" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="w">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="W" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="w" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="W" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="e">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="E" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ę" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ę" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="r">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="R" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="r" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="R" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="t">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="T" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="t" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="T" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="y">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="Y" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="y" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Y" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="u">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="U" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="u" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="U" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="i">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="I" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="i" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="I" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="o">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="O" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ó" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ó" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="p">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="P" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="p" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="P" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="[">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="{" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="]">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="}" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="\">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="|" style="display:none;">
+
+        <input type="button" class="keyboardSpecialButton keyboardButtonCapsLock" id="btnCapsLock" value="CpLk">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="a">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="A" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ą" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ą" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="s">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="S" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ś" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ś" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="d">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="D" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="d" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="D" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="f">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="F" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="f" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="F" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="g">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="G" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="g" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="G" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="h">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="H" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="h" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="H" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="j">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="J" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="j" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="J" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="k">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="K" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="k" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="K" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="l">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="L" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ł" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ł" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value=";">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value=":" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="'">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="&quot;" style="display:none;">
+
+        <input type="button" class="keyboardSpecialButton keyboardButtonEnter" id="btnEnter" value="Enter">
+        <input type="button" class="keyboardSpecialButton keyboardButtonAlt" id="btnAlt" value="Alt">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="z">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="Z" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ż" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ż" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="x">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="X" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ź" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ź" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="c">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="C" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ć" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ć" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="v">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="V" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="v" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="V" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="b">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="B" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="b" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="B" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="n">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="N" style="display:none;">
+	
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="ń" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="Ń" style="display:none;">
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard capsLockShiftKeyboard" value="m">
+	<input type="button" class="keyboardButton shiftKeyboard capsLockKeyboard" value="M" style="display:none;">
+	
+		<input type="button" class="keyboardButton altKeyboard altCapsLockShiftKeyboard" value="m" style="display:none;">
+		<input type="button" class="keyboardButton altShiftKeyboard altCapsLockKeyboard" value="M" style="display:none;">
+	
+	
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value=",">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="<" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value=".">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value=">" style="display:none;">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="button" class="keyboardButton defaultKeyboard altKeyboard capsLockKeyboard altCapsLockKeyboard" value="/">
+	<input type="button" class="keyboardButton shiftKeyboard altShiftKeyboard capsLockShiftKeyboard altCapsLockShiftKeyboard" value="?" style="display:none;">
+
+        <input type="button" class="keyboardSpecialButton keyboardButtonRightShift" id="btnRightShift" value="Shift">
+        <input type="button" class="keyboardButtonSpace" id="btnSpace" value=" ">
+    </div>
+    <a href="#" title="Zamknij" class="keyboardClose">&nbsp;</a>
+</div>
+
+            </div>
+        </div>
+    </div>
+    
+</form>
+<script type="text/javascript" language="JavaScript">
+  <!--
+  var focusControl = document.forms["LoginAliasForm"].elements["p_alias"];
+
+  if (focusControl.type != "hidden" && !focusControl.disabled) {
+     focusControl.focus();
+  }
+  // -->
+</script>
+
+
+
+
+
+<div class="login-banner ">
+    <div class="login-security" style="width: calc(100% - 39.1131rem);">
+        <div class="login-security-content">
+            <b>Przed zalogowaniem sprawdź:</b>
+            <ul class="login-security-statements">
+                
+                    <li class="login-security-statement">czy w pasku adresowym przeglądarki adres zaczyna się od https? </li>
+                
+                    <li class="login-security-statement">czy znajduje tam mała kłódka informująca o bezpieczeństwie? </li>
+                
+                    <li class="login-security-statement">czy certyfikat strony jest wydany dla www.pekaobiznes24.pl?</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="login-offer" style="width: 58.6696rem;">
+        <div class="rightSide">
+            <ul class="naviSlide" style="display: block;">
+                
+                    <li class="active"><a class="adDot" href="#">&nbsp;</a></li>
+                
+                    <li><a class="adDot" href="#">&nbsp;</a></li>
+                
+            </ul>
+        </div>
+
+        
+            <div class="tab sliderTab" id="tabSlider1" style="display: block;">
+                <a title="" class="ext" href="https://www.pekao.com.pl/korporacje/obsluga-elektroniczna.html#section-0" onclick="return false">
+                    <img src="..//static/loginPage/213.jpg">
+                </a>
+            </div>
+        
+            <div class="tab sliderTab" id="tabSlider2" style="display: none;">
+                <a title="" class="ext" href="https://www.pekao.com.pl/witamy-w-pekao/msp/korzystam-online-z-bankowosci-elektronicznej.html" onclick="return false">
+                    <img src="..//static/loginPage/207.png">
+                </a>
+            </div>
+        
+
+    </div>
+</div>
+
+<script type="text/javascript" language="JavaScript">
+    function processTrustedDevices() {
+        var pb24TrustedDeviceIdentifier = localStorage.getItem("PB24_TD_ID");
+        if (pb24TrustedDeviceIdentifier === null || pb24TrustedDeviceIdentifier === undefined) {
+            pb24TrustedDeviceIdentifier = '926495ac-f807-41eb-82b8-d5d1b85b4ca0';
+            localStorage.setItem("PB24_TD_ID", pb24TrustedDeviceIdentifier);
+        }
+        $("#deviceFingerprint").val(pb24TrustedDeviceIdentifier);
+    }
+
+    function onDocumentReady() {
+        processTrustedDevices();
+
+        if(parent!=self)
+            top.parent.location = "login";
+        InitLogonSlider("naviSlide", "tabSlider", 8000);
+        alignNews();
+        checkBrowser();
+    }
+
+    function alignNews() {
+        var l = $('.loginForm');
+        var b = $('.leftSide .box:first');
+        var lH = l.outerHeight()+20;
+        var bH = b.outerHeight()+40;
+        if(lH>bH)
+            b.css({'height' : bH+(lH-bH)-40});
+        if(lH<bH)
+            l.css({'margin-bottom' : bH-lH+20});
+    }
+
+    function changeButtonStyle() {
+        
+        mainForm = document.LoginAliasForm;
+        if(mainForm.p_alias.value.length >= 4){
+            $("#loginAliasButtonNext").removeClass("disabled").prop("disabled", false );
+        } else {
+            $("#loginAliasButtonNext").addClass("disabled").attr("disabled", "disabled");
+        }
+        
+    }
+
+    function checkBrowser(){
+        document.forms['LoginAliasForm'].elements['userBrowserInternetExplorer'].value = detectIE();
+    }
+</script>
+
+
+
+
+
+
+
+
+
+<style type="text/css">@import url('../pb24/_css/security.css?v=202210171224');</style>
+
+<style type="text/css">@import url('../pb24/_css/infotabs.css?v=202210171224');</style>
+
+<style type="text/css">@import url('../pb24/_css/contact.css?v=202210171224');</style>
+
+<style type="text/css">@import url('../pb24/_css/regulations.css?v=202210171224');</style>
+
+<style type="text/css">@import url('../pb24/_css/toastr.css?v=202210171224');</style>
+
+
+
+<div class="cl"></div>
+
+</div>
+<div class="footer ">
+    <ul class="links pull-left">
+        <li><a data-target="#securityModal" data-toggle="modal" data-backdrop="static">BEZPIECZEŃSTWO</a></li>
+        <li><a data-target="#contactModal" data-toggle="modal" data-backdrop="static">KONTAKT</a></li>
+        <li><a data-target="#privacyPolicyModal" data-toggle="modal" data-backdrop="static">POLITYKA PRYWATNOŚCI</a></li>
+        
+
+    </ul>
+</div>
+
+
+
+
+</div>
+<noscript><span>Do poprawnego działania aplikacji niezbędne jest wł?czenie obsługi JavaScript</span></noscript>
+
+<script src="../js/detectBrowserLib.js?v=202210171224" type="text/javascript"></script>
+
+<script src="../js/jquery/jquery-3.5.0.min.js?v=202210171224"></script>
+<script src="../js/jquery/jquery.browser.min.js?v=202210171224"></script>
+<script src="../static/js/toastr.js?v=202210171224"></script>
+
+
+<script src="../js/bootstrap-3.4.1.min.js?v=202210171224" type="text/javascript"></script>
+<script src="../pb24/_js/libs.js?v=202210171224"></script>
+<!--[if lte IE 8]><script src="../pb24/_js/ieFix.js"></script><![endif]-->
+<script>var sLang = 'PL';</script>
+<script src="../pb24/_js/scripts.js?v=202210171224"></script>
+<script src="../js/general.js?v=202210171224"></script>
+<script src="../js/Keys.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/KeysUtil.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/Mask.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/MaskUtil.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/conversionLib.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/vIBankForm.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/dynamicLayers.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/pm_fp.js?v=202210171224" type="text/javascript"></script>
+<script src="../js/KeyboardNewVisualisation.js?v=202210171224" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../css/xdialog.css?v=202210171224">
+<script src="../js/xdialog.js?v=202210171224"></script><div class="xd-overlay xd-spin-overlay xd-center-child" style="z-index: 2147483647;"><div class="sk-fading-circle"><div class="sk-circle sk-circle1"></div><div class="sk-circle sk-circle2"></div><div class="sk-circle sk-circle3"></div><div class="sk-circle sk-circle4"></div><div class="sk-circle sk-circle5"></div><div class="sk-circle sk-circle6"></div><div class="sk-circle sk-circle7"></div><div class="sk-circle sk-circle8"></div><div class="sk-circle sk-circle9"></div><div class="sk-circle sk-circle10"></div><div class="sk-circle sk-circle11"></div><div class="sk-circle sk-circle12"></div></div></div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if(typeof window.onDocumentReady == 'function')
+            onDocumentReady();
+        if(typeof window.initHelp == 'function')
+            initHelp();
+        if($(".contact-show").length > 0)
+            $(".contact-row").show()
+    });
+
+    function closeModal(modalId) {
+        $(modalId).modal('hide');
+    }
+
+    function showToastNotification(type, message, title) {
+        toastr[type](message, title);
+    }
+</script>
+
+<div id="securityModal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a href="#" class="header-element active">BEZPIECZEŃSTWO</a>
+                    <span class="bold-line"></span>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#securityModal')" class="header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#securityModal')" class="header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#securityModal')"></a>
+    </div>
+    <div class="security row">
+        <div class="col-xs-8 description">
+            <div class="security-description">
+                <div class="advice-box header">
+                    <div class="advice-box-content">
+                        <div class="security-header">Zasady bezpieczeństwa</div>
+                    </div>
+                </div>
+                <div class="security-body">
+                    <div class="security-body-text">
+                        <p>Bezpieczeństwo operacji wykonywanych poprzez system PekaoBiznes24 zależy nie tylko od Banku, ale również od Użytkownika.</p>
+
+                        <p>Dlatego też, aby bez obaw korzystać z bankowości elektronicznej, stosuj się do zaleceń zawartych na stronie.</p>
+
+                        <p>Zapoznaj się również z aktualnymi <a href="http://zbp.pl/dla-konsumentow/bezpieczny-bank/aktualnosci">komunikatami</a> Związku Banków Polskich i <a href="http://zbp.pl/dla-konsumentow/bezpieczny-bank/bankowosc-internetowa">poradnikiem</a> na temat bezpieczeństwa transakcji bankowych w internecie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 communiques">
+            <ul>
+                <a data-target="#softwareSubmodal" data-toggle="modal" data-backdrop="static" onclick="closeModal('#securityModal')"><li class="menu-item bulletin1">Sprzęt i aplikacje</li></a>
+                <a data-target="#privacySubmodal" data-toggle="modal" data-backdrop="static" onclick="closeModal('#securityModal')"><li class="menu-item bulletin2">Ochrona poufnych danych</li></a>
+                <a data-target="#warningsSubmodal" data-toggle="modal" data-backdrop="static" onclick="closeModal('#securityModal')"><li class="menu-item bulletin3">Ostrzeżenia o zagrożeniach</li></a>
+                <a data-target="#operationAuthorizationSubmodal" data-toggle="modal" data-backdrop="static" onclick="closeModal('#securityModal')"><li class="menu-item bulletin4">Autoryzacja operacji</li></a>
+                <a data-target="#abuseSubmodal" data-toggle="modal" data-backdrop="static" onclick="closeModal('#securityModal')"><li class="menu-item bulletin5">Podejrzenie nadużycia</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="contactModal" class="modal fade full-height bg-modal infotabs container-fluid modal-scroll" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#contactModal')" class="first-element header-element">BEZPIECZEŃSTWO</a>
+                </li>
+                <li>
+                    <a href="#" class="contact header-element active">KONTAKT</a>
+                    <span class="bold-line-contact"></span>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#contactModal')" class="privacy-policy header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#contactModal')"></a>
+    </div>
+    <div class="full-height col-xs-12 contact">
+        <div class="info full-height col-xs-12">
+            <div class="row">
+                <div class="full-height col-xs-8 numbers-column">
+                    <div class="header">
+                        <p>
+                            PekaoBiznes24
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <div>
+                            <div class="phone-number-row">
+                                <p class="number-header">Duże firmy i Korporacje</p>
+                                <div style="height: 45px">
+                                    <i class="icon sprite-small-modern-phone"></i>
+                                    <a href="tel:801 656 776" class="tel">801 656 776</a>
+                                </div>
+                                <div style="height: 45px">
+                                    <i class="icon sprite-small-classic-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:+48 22 591 22 22" class="tel">+48 22 591 22 22</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="height: 45px">
+                                    <i class="icon sprite-mail"></i>
+                                    <div class="tel">
+                                        <a href="mailto:pekaobiznes24@pekao.com.pl">pekaobiznes24@pekao.com.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div>
+                            <div class="phone-number-row">
+                                <p class="number-header">Mikroprzedsiębiorstwa oraz Małe i średnie przedsiębiorstwa</p>
+                                <div class="contact-row" style="height: 45px">
+                                    <i class="icon sprite-small-modern-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:801 666 555" class="tel">801 666 555</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="height: 45px">
+                                    <i class="icon sprite-small-classic-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:+48 22 591 23 23" class="tel">+48 22 591 23 23</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="height: 45px">
+                                    <i class="icon sprite-mail"></i>
+                                    <div class="tel">
+                                        <a href="mailto:pb24@pekao.com.pl">pb24@pekao.com.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <p class="subscription">Opłaty za połączenia pobierane wg cennika operatora</p>
+                </div>
+                <div class="full-height scrollable scrollable-contacts col-xs-4 numbers-column">
+                    <div class="menu-header">Skontaktuj się z nami:</div>
+                    <div>
+                        <ul class="modal-side-menu">
+                            <a href="mailto:pekaobiznes24@pekao.com.pl">
+                                <li class="menu-item">
+                                    <div class="icon-container icon-margin">
+                                        <span class="icon sprite-contact-envelope"></span>
+                                    </div>
+                                    <div class="labels">
+                                        <p class="name">Napisz wiadomość</p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="menu-header">Skontaktuj się z:</div>
+                    <div>
+                        <ul class="menu-contact">
+                            <div></div>
+                            <div>
+                                <a data-target="#businessLineSubmodal" data-toggle="modal" class="contact-box" onclick="closeModal('#contactModal')">
+                                    <li class="menu-orange-item not-selectable">
+                                        <div class="labels">
+                                            <p class="name">Kontakt do Business Line</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                            <div>
+                                <a data-target="#pekaoLeasingSubmodal" data-toggle="modal" class="contact-box" onclick="closeModal('#contactModal')">
+                                    <li class="menu-orange-item not-selectable">
+                                        <div class="labels">
+                                            <p class="name">Kontakt do Pekao Leasing</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="navbar navbar-fixed-bottom footer-width">
+                <ul class="links">
+                    <li><span class="links-header">Znajdź nas:</span></li>
+                    <li><a href="https://www.pekao.com.pl/" class="icon sprite-pekao-www"></a></li>
+                    <li><a href="https://www.facebook.com/bankpekaosa" class="icon sprite-facebook"></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5s6oQ3LlZmo" class="icon sprite-youtube"></a></li>
+                </ul>
+                <p class="subscription">Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul. Grzybowska 53/57, 00-950 Warszawa, wpisany do rejestru przedsiębiorców w Sądzie Rejonowym dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS: 0000014843, NIP: 526-00-06-841, REGON: 000010205, wysokość kapitału zakładowego i kapitału wpłaconego:&nbsp;262&nbsp;470&nbsp;034&nbsp;zł.&nbsp;</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div id="businessLineSubmodal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#businessLineSubmodal')" class="first-element header-element">BEZPIECZEŃSTWO</a>
+                </li>
+                <li>
+                    <a href="#" class="contact header-element active">KONTAKT</a>
+                    <span class="bold-line-contact"></span>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#businessLineSubmodal')" class="privacy-policy header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#businessLineSubmodal')"></a>
+    </div>
+    <div class="full-height col-xs-12 contact">
+        <div class="info full-height col-xs-12">
+            <div class="row">
+                <div class="full-height col-xs-8 numbers-column">
+                    <div class="header">
+                        <p>
+                            Business Line
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <div>
+                            <div class="phone-number-row">
+                                <p class="number-header">Business Line - telefon</p>
+                                <div>
+                                    <i class="icon sprite-small-modern-phone"></i>
+                                    <a href="tel:801 400 500" class="tel">801 400 500</a>
+                                </div>
+                                <div>
+                                    <i class="icon sprite-small-classic-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:+48 22 591 25 91" class="tel">+48 22 591 25 91</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="phone-number-row">
+                                <p class="number-header">Business Line - fax</p>
+                                <div>
+                                    <i class="icon sprite-small-classic-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:+48 22 640 64 50" class="tel">+48 22 640 64 50</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="phone-number-row">
+                                <p class="number-header">E-mail</p>
+                                <div>
+                                    <i class="icon sprite-mail"></i>
+                                    <div class="tel">
+                                        <a href="mailto:business.line@pekao.com.pl">business.line@pekao.com.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <p class="subscription">Opłaty za połączenia pobierane wg cennika operatora</p>
+                </div>
+                <div class="full-height scrollable scrollable-contacts col-xs-4 numbers-column">
+                    <div class="menu-header">Skontaktuj się z nami:</div>
+                    <div>
+                        <ul class="modal-side-menu">
+                            <a href="mailto:business.line@pekao.com.pl">
+                                <li class="menu-item">
+                                    <div class="icon-container icon-margin">
+                                        <span class="icon sprite-contact-envelope"></span>
+                                    </div>
+                                    <div class="labels">
+                                        <p class="name">Napisz wiadomość</p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="menu-header">Skontaktuj się z:</div>
+                    <div>
+                        <ul class="menu-contact">
+                            <div></div>
+                            <div>
+                                <a data-target="#contactModal" data-toggle="modal" class="contact-box" onclick="closeModal('#businessLineSubmodal')">
+                                    <li class="menu-orange-item not-selectable">
+                                        <div class="labels">
+                                            <p class="name">Kontakt do PekaoBiznes24</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                            <div>
+                                <a data-target="#pekaoLeasingSubmodal" data-toggle="modal" class="contact-box" onclick="closeModal('#businessLineSubmodal')">
+                                    <li class="menu-orange-item not-selectable">
+                                        <div class="labels">
+                                            <p class="name">Kontakt do Pekao Leasing</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="navbar navbar-fixed-bottom footer-width">
+                <ul class="links">
+                    <li><span class="links-header">Znajdź nas:</span></li>
+                    <li><a href="https://www.pekao.com.pl/" class="icon sprite-pekao-www"></a></li>
+                    <li><a href="https://www.facebook.com/bankpekaosa" class="icon sprite-facebook"></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5s6oQ3LlZmo" class="icon sprite-youtube"></a></li>
+                </ul>
+                <p class="subscription">Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul. Grzybowska 53/57, 00-950 Warszawa, wpisany do rejestru przedsiębiorców w Sądzie Rejonowym dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS: 0000014843, NIP: 526-00-06-841, REGON: 000010205, wysokość kapitału zakładowego i kapitału wpłaconego:&nbsp;262&nbsp;470&nbsp;034&nbsp;zł.&nbsp;</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div id="pekaoLeasingSubmodal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#pekaoLeasingSubmodal')" class="first-element header-element">BEZPIECZEŃSTWO</a>
+                </li>
+                <li>
+                    <a href="#" class="contact header-element active">KONTAKT</a>
+                    <span class="bold-line-contact"></span>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#pekaoLeasingSubmodal')" class="privacy-policy header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#pekaoLeasingSubmodal')"></a>
+    </div>
+    <div class="full-height col-xs-12 contact">
+        <div class="info full-height col-xs-12">
+            <div class="row">
+                <div class="full-height col-xs-8 numbers-column">
+                    <div class="header">
+                        <p>
+                            Pekao Leasing
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <div>
+                            <div class="phone-number-row">
+                                <p class="number-header">Pekao Leasing - telefon</p>
+                                <div>
+                                    <i class="icon sprite-small-modern-phone"></i>
+                                    <a href="tel:800 506 441" class="tel">800 506 441</a>
+                                </div>
+                                <div>
+                                    <i class="icon sprite-small-classic-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:+48 22 54 82 100" class="tel">+48 22 54 82 100</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="phone-number-row">
+                                <p class="number-header">Pekao Leasing - fax</p>
+                                <div>
+                                    <i class="icon sprite-small-classic-phone"></i>
+                                    <div class="tel">
+                                        <div>
+                                            <a href="tel:+48 22 54 82 110" class="tel">+48 22 54 82 110</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="phone-number-row">
+                                <p class="number-header">E-mail</p>
+                                <div>
+                                    <i class="icon sprite-mail"></i>
+                                    <div class="tel">
+                                        <a href="mailto:info@pekaoleasing.com.pl">info@pekaoleasing.com.pl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <p class="subscription">Opłaty za połączenia pobierane wg cennika operatora</p>
+                </div>
+                <div class="full-height scrollable scrollable-contacts col-xs-4 numbers-column">
+                    <div class="menu-header">Skontaktuj się z nami:</div>
+                    <div>
+                        <ul class="modal-side-menu">
+                            <a href="mailto:info@pekaoleasing.com.pl">
+                                <li class="menu-item">
+                                    <div class="icon-container icon-margin">
+                                        <span class="icon sprite-contact-envelope"></span>
+                                    </div>
+                                    <div class="labels">
+                                        <p class="name">Napisz wiadomość</p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="menu-header">Skontaktuj się z:</div>
+                    <div>
+                        <ul class="menu-contact">
+                            <div></div>
+                            <div>
+                                <a data-target="#contactModal" data-toggle="modal" class="contact-box" onclick="closeModal('#pekaoLeasingSubmodal')">
+                                    <li class="menu-orange-item not-selectable">
+                                        <div class="labels">
+                                            <p class="name">Kontakt do PekaoBiznes24</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                            <div>
+                                <a data-target="#businessLineSubmodal" data-toggle="modal" class="contact-box" onclick="closeModal('#pekaoLeasingSubmodal')">
+                                    <li class="menu-orange-item not-selectable">
+                                        <div class="labels">
+                                            <p class="name">Kontakt do Business Line</p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="navbar navbar-fixed-bottom footer-width">
+                <ul class="links">
+                    <li><span class="links-header">Znajdź nas:</span></li>
+                    <li><a href="https://www.pekao.com.pl/" class="icon sprite-pekao-www"></a></li>
+                    <li><a href="https://www.facebook.com/bankpekaosa" class="icon sprite-facebook"></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5s6oQ3LlZmo" class="icon sprite-youtube"></a></li>
+                </ul>
+                <p class="subscription">Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul. Grzybowska 53/57, 00-950 Warszawa, wpisany do rejestru przedsiębiorców w Sądzie Rejonowym dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, KRS: 0000014843, NIP: 526-00-06-841, REGON: 000010205, wysokość kapitału zakładowego i kapitału wpłaconego:&nbsp;262&nbsp;470&nbsp;034&nbsp;zł.&nbsp;</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div id="privacyPolicyModal" class="modal fade full-height bg-modal infotabs container-fluid modal-scroll" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#privacyPolicyModal')" class="first-element header-element">BEZPIECZEŃSTWO</a>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#privacyPolicyModal')" class="contact header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a href="#" class="privacy-policy header-element active">POLITYKA PRYWATNOŚCI</a>
+                    <span class="bold-line-wrapped"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#privacyPolicyModal')"></a>
+    </div>
+    <div class="col-xs-8 col-xs-offset-2 regulations scrollable scrollable-nested-content-height">
+        <h1>Polityka Prywatności i wykorzystywania plików cookies w serwisach internetowych Banku Pekao S.A.: (dalej jako "Serwisy")</h1>
+        <p>
+            Zgodnie z treścią Ustawy z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz. U. z 2002 r. Nr 101 poz. 926 ze zm. - dalej "Ustawa") Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul. Grzybowska 53/57 informuje, że jest Administratorem podanych przez Państwa w dedykowanych formularzach danych osobowych. Wypełnienie i wysłanie formularza kontaktowego znajdującego się w danym serwisie oznacza przekazanie danych osobowych znajdujących się w formularzu.
+        </p>
+        <h2>Administrowanie danymi osobowymi</h2>
+        <p>
+            Bank zbiera wyłącznie dane, które posłużą do świadczenia wybranej przez Państwa usługi, udzielenia odpowiedzi na skierowane do Banku wystąpienie, w celach marketingowych związanych z reklamą produktów bankowych, przekazania informacji na temat oferty Banku oraz archiwalnym i statystycznym. Dane podawane przez Państwa w czasie wypełniania formularza online chronione są za pomocą protokołu SSL (Secure Socket Layer).
+        </p>
+        <h2>Ujawnianie danych osobowych</h2>
+        <p>
+            Zebrane przez Bank Pekao S.A. dane osobowe mogą zostać ujawnione podmiotom w ramach grupy kapitałowej do której należy Bank w celach związanych z Państwa obsługą.
+        </p>
+        <p>
+            Zebrane dane osobowe nie zostaną ujawnione żadnym innym osobom ani podmiotom, chyba że będzie to wymagane obowiązującymi przepisami prawa lub zostanie zawarta stosowna umowa gwarantująca ochronę Państwa praw i prywatności.
+        </p>
+        <h2>Gromadzenie innych danych</h2>
+        <p>
+            Pliki cookies (tzw. "ciasteczka") stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.
+        </p>
+        <p>
+            Bank wykorzystuje pliki typu cookies w celu gromadzenia informacji związanych z korzystaniem z Serwisów przez Użytkowników i nie zbiera w sposób automatyczny żadnych innych informacji o Użytkowniku. Dla poszczególnych Serwisów Banku mogą być wykorzystywane różne pliki cookies. Działanie to nie służy zbieraniu ani przetwarzaniu danych osobowych. Istnieje możliwość wyłączenia funkcji cookies za pomocą odpowiedniej konfiguracji ustawień przeglądarki internetowej wykorzystywanej przez Użytkownika, jednak może to spowodować utratę dostępu do niektórych funkcji serwisu.  
+        </p>
+        <p>
+            W serwisach Banku pliki cookies wykorzystywane są w celu:
+        </p>
+        <ul>
+            <li>dostosowania zawartości stron internetowych Serwisu do preferencji Użytkownika oraz optymalizacji korzystania ze stron internetowych; w szczególności pliki te pozwalają rozpoznać urządzenie Użytkownika Serwisu i odpowiednio wyświetlić stronę internetową, dostosowaną do jego indywidualnych potrzeb;</li>
+            <li>tworzenia statystyk, które pomagają zrozumieć, w jaki sposób Użytkownicy Serwisu korzystają ze stron internetowych, co umożliwia ulepszanie ich struktury i zawartości;</li>
+            <li>utrzymanie sesji Użytkownika Serwisu (po zalogowaniu), dzięki której Użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;</li>
+        </ul>
+        <h2>Czy mogę zrezygnować z akceptowania cookies?</h2>
+        <p>
+            Czynności związane z przechowywaniem i wysyłaniem ciasteczek są obsługiwane przez przeglądarki internetowe i są niewidoczne dla użytkownika. Większość używanych przeglądarek domyślnie akceptuje Ciasteczka. Jednakże użytkownik, może ustawić tak przeglądarkę, by móc odrzucać prośby o przechowanie ciasteczek w ogóle lub wybranych ciasteczek. Można to zrobić za pomocą ustawień w przeglądarce. Zanim zdecydujesz się zmienić domyślne ustawienia pamiętaj jednak, że wiele Ciasteczek pomaga w wygodnym korzystaniu ze strony. Wyłączenie Ciasteczek może mieć wpływ na to jak będzie się wyświetlać nasza strona w Twojej przeglądarce.
+        </p>
+        <p>
+            Bank informuje, że w momencie połączenia się przez Użytkownika z Serwisem, w logach systemowych pojawiają się informacje o numerze (w tym IP) i rodzaju urządzenia końcowego Użytkownika, a także czasu połączenia z Serwisem oraz inne dane eksploatacyjne dotyczące aktywności Użytkownika w Serwisie. Bank w celach technicznych przetwarza te informacje zgodnie z przepisami obowiązującego na terytorium Rzeczypospolitej Polskiej prawa.
+        </p>
+        <p>
+            Bank oświadcza, iż dołoży starań, aby zapewnić Użytkownikowi wysoki poziom bezpieczeństwa w zakresie korzystania z Serwisów, poprzez zastosowanie odpowiednich administracyjnych, technicznych i fizycznych zabezpieczeń danych przed ich przypadkowym lub bezprawnym zniszczeniem, utratą, nieupoważnionym ujawnieniem lub udostępnieniem.
+        </p>
+        <p>
+            Dane dotyczące użytkowników niniejszego serwisu zbierane w celu optymalizacji jego funkcjonowania mogą być ujmowane i ujawniane w formie statystyk, przy czym statystyki te nie zawierają danych umożliwiających identyfikuję użytkowników.
+        </p>
+
+        <h2>Modyfikacja lub usunięcie danych osobowych</h2>
+        <p>
+            Informujemy o przysługującym Państwu na podstawie Ustawy prawie dostępu do swoich danych, ich modyfikowania oraz usuwania.
+        </p>
+        <p>
+            Bank Pekao S.A. zastrzega sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności, jednocześnie zapewnia, że prawa użytkownika wynikające z niniejszego dokumentu nie zostaną ograniczone bez jego zgody. Wszelkie zmiany dotyczące Polityki Prywatności będą publikowane na niniejszej stronie.
+        </p>
+    </div>
+</div>
+
+<div id="softwareSubmodal" class="modal fade full-height bg-modal container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a href="#" class="header-element active">BEZPIECZEŃSTWO</a>
+                    <span class="bold-line"></span>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')" class="header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')" class="header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#softwareSubmodal')"></a>
+        <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')" class="sprite sprite-previous"></a>
+    </div>
+    <div class="security row">
+        <div class="col-xs-4 communiques scrollable full-height">
+            <ul>
+                <li class="menu-item active">
+                    <div class="name">Sprzęt i aplikacje</div>
+                </li>
+                <a data-target="#privacySubmodal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ochrona poufnych danych</div>
+                    </li>
+                </a>
+                <a data-target="#warningsSubmodal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ostrzeżenia o zagrożeniach</div>
+                    </li>
+                </a>
+                <a data-target="#operationAuthorizationSubmodal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Autoryzacja operacji</div>
+                    </li>
+                </a>
+                <a data-target="#abuseSubmodal" data-toggle="modal" onclick="closeModal('#softwareSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Podejrzenie nadużycia</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-xs-8 full-height">
+            <div class="regulations scrollable security-scrollable-nested-content-height">
+                <p><strong>Korzystaj jedynie z legalnego oprogramowania:</strong></p>
+                <ul>
+                    <li>Korzystaj wyłącznie z legalnego oprogramowania, pochodzącego z pewnego źródła i podchodź ostrożnie do programów pobieranych z internetu.</li>
+                    <li>Nie instaluj oprogramowania niewiadomego pochodzenia i nie uruchamiaj programów przesłanych pocztą elektroniczną lub przez komunikatory internetowe.</li>
+                </ul>
+                <p>Wiele darmowych programów dostępnych w internecie zawiera aplikację adware, która zawiera programy wyświetlające reklamy (zazwyczaj bannery) niezależnie od czynności wykonywanych przez użytkowników. Ten rodzaj oprogramowania jest często instalowany na komputerach podczas przeglądania stron WWW, bez wiedzy i zgody użytkowników.</p>
+                <p>Niektóre programy są również wyposażone w moduły szpiegujące (ang. spyware), które dostarczają autorom aplikacji wielu cennych informacji o użytkowniku - głównie adres IP, używany system operacyjny, przeglądarkę, a niekiedy strony, z którymi się łączymy.</p>
+                <p>Aplikacje adware/spyware mogą umożliwić osobom niepowołanym śledzenie danych wpisywanych przez użytkownika w przeglądarce internetowej, w tym finansowych (identyfikator użytkownika, PIN, numery kart płatniczych itd.), na co Bank nie ma wpływu, ponieważ nie jest stroną uprawnioną do kontrolowania środowiska komputerowego użytkownika.</p>
+                <p>Symptomami zainfekowania komputera są zwykle: spowolnienie działania systemu, zwiększona liczba reklam (szczególnie okienek pop-up), zmiany w działaniu przeglądarki internetowej, problemy z działaniem niektórych programów.</p>
+                <p><strong>Regularnie aktualizuj system operacyjny i przeglądarki internetowe zainstalowane na Twoim komputerze i urządzeniach mobilnych.</strong></p>
+                <p>W przypadku każdego systemu operacyjnego (także mobilnych) podstawowymi zasadami bezpiecznego korzystania są: posiadanie wsparcia producenta systemu oraz stała aktualizacja systemu i posiadanego oprogramowania służącego do korzystania z internetu, przeglądarki, komunikatorów internetowych, czy programów pocztowych. Wsparcie producenta i najnowsze aktualizacje usuwają błędy w oprogramowaniu, które mogą być wykorzystane przez osoby trzecie w celu uzyskania naszych poufnych danych.</p>
+                <p><strong>Zabezpiecz komputer i swoje urządzenie programami antywirusowymi oraz zaporami sieciowymi (firewall) i na bieżąco je aktualizuj.</strong></p>
+                <p>Ważne jest korzystanie z programów antywirusowych zabezpieczających komputery przed szkodliwym oprogramowaniem oraz z zapory internetowej (tzw. firewall), która kontroluje przesyłanie informacji do i z internetu zapobiegając tym samym przekazywaniu poufnych danych.</p>
+                <p>Należy pamiętać również o odpowiedniej ochronie swojego telefonu podczas korzystania z bankowości mobilnej. Część urządzeń (telefony typu smartphone i tablety), to zaawansowane urządzenia wyposażone w system operacyjny, które należy chronić oprogramowaniem antywirusowym.</p>
+                <p><strong>Do korzystania z bankowości internetowej czy mobilnej PekaoBiznes24 nie są potrzebne żadne certyfikaty bezpieczeństwa, Bank ich nie wysyła oraz nie prosi o ich instalacje.</strong></p>
+                <p><strong>Nie instaluj na komputerze i na urządzeniu mobilnym oprogramowania ze źródeł, do których nie masz zaufania. Niektóre aplikacje mogą umożliwić osobom niepowołanym śledzenie danych wpisywanych w przeglądarce, rejestrować działania podejmowane w internecie czy automatycznie przekierowywać wiadomości SMS z kodem do autoryzacji.</strong></p>
+                <p><strong>Świadomie dokonuj wyboru przeglądarki internetowej oraz dokonaj jej właściwych ustawień:</strong></p>
+                <ul><li>Najnowsze wersje popularnych przeglądarek, takich jak Mozilla Firefox, Opera czy Internet Explorer zawierają wiele funkcji, np. filtr witryn wyłudzających poufne dane, które w istotny sposób chronią przed oszustwami w internecie i podnoszą poziom bezpieczeństwa korzystania z bankowości elektronicznej. Oszustwa te, znane są jako "phishing" lub "wyłudzanie informacji". Polegają one zwykle na próbie nakłonienia nas do odwiedzenia fałszywej witryny internetowej, na której możemy być proszeni o podanie poufnych danych osobowych lub numeru karty kredytowej. Ten rodzaj kradzieży tożsamości jest bardzo często wykorzystywany przez przestępców.</li><li>Pobierz wszelkie uaktualnienia przeglądarek, z których korzystasz, wielokrotnie wykrywane w nich były bardzo poważne błędy; krytyczne znaczenie ma instalacja aktualnych poprawek ("łat" - ang. patch) publikowanych na stronach producentów danego oprogramowania.</li></ul>
+                <p></p><p><strong>Ustanów hasło do routera:</strong></p><p></p>
+                <ul><li>Używając routera lub sieci bezprzewodowej (wi-fi) ustanów własne, bezpieczne i trudne do złamania hasło do tych urządzeń. Urządzenia te mają zazwyczaj proste, fabrycznie ustawione hasło, chroniące dostęp do ich panelów administracyjnych. Dzięki znajomości takiego hasła osoba działająca z zewnątrz może zmienić ustawienia routera, co może skutkować przekierowaniem na strony stworzone w celu kradzieży poufnych danych lub dystrybuujących szkodliwe oprogramowanie.</li></ul>
+                <p><strong>Warunkiem korzystania z PekaoBiznes24 jest posiadanie wyposażenia technicznego i oprogramowania niezbędnego do poprawnego funkcjonowanie usługi, tj. korzystania z serwisu:</strong></p>
+                <ul><li>wymaga posiadania dostępu do internetu,</li><li>wymaga posiadania czytnika kart kryptograficznych i karty kryptograficznej lub tokena kryptograficznego lub telefonu komórkowego,</li><li>wymaga zainstalowanego komponentu kryptograficznego podpisanego przez Bank Pekao S.A.,</li><li>Bankowość Mobilna - wymaga posiadania mobilnego urządzenia telekomunikacyjnego z przeglądarką internetową i z dostępem do internetu.</li></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="privacySubmodal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a href="#" class="header-element active">BEZPIECZEŃSTWO</a>
+                    <span class="bold-line"></span>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#privacySubmodal')" class="header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#privacySubmodal')" class="header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#privacySubmodal')"></a>
+        <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#privacySubmodal')" class="sprite sprite-previous"></a>
+    </div>
+    <div class="security row">
+        <div class="col-xs-4 communiques scrollable full-height">
+            <ul>
+                <a data-target="#softwareSubmodal" data-toggle="modal" onclick="closeModal('#privacySubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Sprzęt i aplikacje</div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="menu-item active">
+                        <div class="name">Ochrona poufnych danych</div>
+                    </li>
+                </a>
+                <a data-target="#warningsSubmodal" data-toggle="modal" onclick="closeModal('#privacySubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ostrzeżenia o zagrożeniach</div>
+                    </li>
+                </a>
+                <a data-target="#operationAuthorizationSubmodal" data-toggle="modal" onclick="closeModal('#privacySubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Autoryzacja operacji</div>
+                    </li>
+                </a>
+                <a data-target="#abuseSubmodal" data-toggle="modal" onclick="closeModal('#privacySubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Podejrzenie nadużycia</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-xs-8 full-height">
+            <div class="regulations scrollable security-scrollable-nested-content-height">
+                <p><strong>Chroń swój identyfikator użytkownika i hasło:</strong></p>
+                <ul><li>Loguj się wyłącznie osobiście. Chroń dane do logowania i autoryzacji, dbaj o ich poufność. Powinny być one przechowywane z zachowaniem należytej staranności oraz nieudostępniane osobom trzecim. Ujawnienie tych danych innym osobom czy instytucjom stanowi naruszenie Regulaminu PekaoBiznes24.</li><li>Podczas kontaktów telefonicznych Bank nigdy nie prosi o podanie hasła do serwisu internetowego, aplikacji mobilnej, numerów PIN do kart ani kodów SMS.</li><li>Logowanie do usług telefonicznych odbywa się ZAWSZE w serwisach automatycznych.</li><li>Pamiętaj również, że Bank nigdy nie prosi o przesłanie takich danych pocztą elektroniczną.</li><li><strong>Regularnie zmieniaj hasło w serwisie internetowym.</strong> Bezpieczne hasło powinno składać się z wielkich i małych liter, cyfr i znaków specjalnych (np. ?, #, @, &amp;) i nie powinno być słowem występującym w słowniku, ani hasłem używanym w innych serwisach internetowych. Zmieniaj PIN oraz hasło co kilka miesięcy.</li><li>Jeżeli do autoryzacji operacji w Systemie używasz kodów SMS, zawsze sprawdzaj czy wiadomość SMS z kodem autoryzacyjnym jest zgodna z wykonywaną przez Ciebie operacją.</li><li>Zwróć szczególną uwagę na:</li><ul><li><strong>numer rachunku</strong> - sprawdź, czy odpowiada on rachunkowi odbiorcy wykonywanej operacji (Pamiętaj! SMS z kodem autoryzacyjnym zawiera jedynie dwie pierwsze i cztery ostatnie cyfry numeru rachunku),</li><li><strong>kwotę operacji</strong> - musi być ona zgodna z tą, która została podana w dyspozycji.</li></ul><li>Nie odpowiadaj na wiadomości pochodzące od niezaufanych nadawców, zawierające oferty dotyczące pośredniczenia w przekazywaniu płatności drogą internetową. Mają one zazwyczaj na celu wykorzystanie rachunków bankowych do przekazywania środków pochodzących z kradzieży, za co grozi odpowiedzialność karna.</li><li>Nie otwieraj załączników z wiadomości od nadawców których nie znasz, z którymi nie współpracujesz lub których nie rozpoznajesz.</li><li>Bądź czujny, a w przypadku jakichkolwiek wątpliwości skontaktuj się z konsultantem PekaoBiznes24 pod numerem telefonu <strong>801 666 555</strong> lub <strong>+48 (22) 591 23 23</strong> (opłaty wg cennika operatora), którzy poradzą jak w danej sytuacji się zachować.</li><li>Pamiętaj również, aby bezpiecznie wylogować się z PekaoBiznes24. W pierwszej kolejności kliknij na przycisk "Wyloguj", a dopiero później zamknij okno przeglądarki internetowej.</li></ul>
+                <p><strong>Nie podawaj loginu i hasła oraz numeru telefonu, kodów SMS na nieznanych stronach:</strong></p><ul><li>Loguj się wyłącznie na stronie <strong><a href="https://www.pekaobiznes24.pl" target="_blank">www.pekaobiznes24.pl</a></strong>, a przed zalogowaniem zawsze sprawdź, czy połączenie jest szyfrowane (adres strony zaczyna się wtedy od https).</li><li>Nie używaj do logowania adresu lub linku przesłanego w wiadomości e-mail lub SMS, jeśli nie jesteś pewien jej źródła. Zachowaj ostrożność i ograniczone zaufanie w stosunku do wiadomości e-mail pochodzących od nieznanych nadawców. Zalecamy nie odpowiadać na takie wiadomości i nie otwierać przesłanych załączników lub linków.</li><li>Nie podawaj poufnych informacji na stronach przypominających swoim wyglądem strony Banku.</li><li>Ustanawiając PIN do karty, tokena lub do aplikacji mobilnej pamiętaj aby były inne i różne niż ten, którego używasz podczas logowania do Systemu. Powinien być na tyle trudny, aby nie został odgadnięty przez osoby do tego nieuprawnione.</li></ul>
+                <p><strong>Nie ufaj nadawcy wiadomości e-mail. Oszuści mają możliwość spreparowania wiadomości tak, by sprawiała wrażenie, że wysłała ją osoba, lub instytucja, której ufasz:</strong></p><ul><li>Nie otwieraj załączników do podejrzanych wiadomości. Opierając się na zaufaniu klienta do firmy pod którą się podszywają, a dodatkowo na niepokoju związanym z rzekomą płatnością do uregulowania, przestępcy nakłaniają klienta do otwarcia załącznika do e-maila rzekomo zawierającego szczegóły zaległej płatności. Otwarcie załącznika infekuje komputer, na którym załącznik jest otwierany, groźnym trojanem mogącym skutkować kradzieżą danych poufnych klienta, a przede wszystkim pojawianiem się oszukańczych transakcji bankowych.</li></ul><p><strong>Nie korzystaj z serwisów realizujących płatności, które wymagają ujawnienia loginu, hasła czy kodu do autoryzacji operacji:</strong></p><ul><li>Nie korzystaj z serwisów realizujących płatności, które wymagają ujawnienia identyfikatora użytkownika, hasła czy kodu do autoryzacji operacji. Udostepnienie ich może pozwolić osobom trzecim na nieuprawniony dostęp do usługi PekaoBiznes24, zmianę Twoich danych lub wykorzystanie ich do celów przestępczych. Pamiętaj również, że ujawnienie danych niezbędnych do logowania lub autoryzacji jest niezgodne z Regulaminem PekaoBiznes24 i może skutkować blokadą usługi. Zapoznaj się z <strong><a href="http://zbp.pl/dla-konsumentow/bezpieczny-bank/aktualnosci" target="_blank">komunikatem Związku Banków Polskich</a></strong> na temat ujawniania informacji wrażliwych serwisom oferującym szybkie płatności.</li></ul><p><strong>Sprawdzaj certyfikaty zabezpieczeń:</strong></p><ul><li>Po zalogowaniu do serwisu <strong>sprawdź, czy na ekranie widnieje symbol kłódki</strong> oznaczający nawiązanie połączenia szyfrowanego (<strong>adres zaczyna się wtedy od https a nie od http</strong>).</li><li>Jeżeli znajdziesz symbol kłódki, kliknij na niego dwa razy, aby sprawdzić, <strong>czy wyświetlony certyfikat jest ważny i czy został wydany dla Banku Pekao S.A. oraz adresu <a href="https://www.pekaobiznes24.pl" target="_blank">https://www.pekaobiznes24.pl/</a></strong>. </li><li><strong>Prawidłowy certyfikat powinien zawierać:</strong></li><ul><li>- wystawcę: <strong>VeriSign, Inc.</strong>,</li><li>- typ certyfikatu: <strong>VeriSign Class 3 Extended Validation SSL SGC CA.</strong></li></ul><li><strong>Pamiętaj także, że Bank nigdy nie wysyła żadnych certyfikatów bezpieczeństwa poprzez wiadomość SMS.</strong></li><li>Zaletą rozszerzonego certyfikatu jest jednoznaczna identyfikacja podmiotu, na rzecz którego certyfikat został wystawiony, czyli w tym przypadku Banku Pekao S.A. W nowoczesnych przeglądarkach internetowych informacja taka jest prezentowana na zielonym tle w pasku adresu.</li><li>Jeśli symbol kłódki jest niewidoczny lub jeśli certyfikat został wystawiony dla innego adresu, nie korzystaj z serwisu - w takiej sytuacji niezwłocznie skontaktuj się z konsultantem infolinii PekaoBiznes24.</li></ul>
+                <p><strong>Nie korzystaj z internetu w miejscach publicznie dostępnych:</strong></p><ul<li>Korzystając z internetu nie loguj się do Systemu PekaoBiznes24 z miejsc ogólnie dostępnych, takich jak kafejki internetowe.<li>Obsługując System PekaoBiznes24, korzystaj tylko z jednego okna przeglądarki, po zakończeniu korzystania z serwisu transakcyjnego lub w razie konieczności oddalenia się od komputera bezwzględnie zakończ pracę w serwisie transakcyjnym używając opcji "Wyloguj" dostępnej w prawym górnym rogu strony.</li><li>Ponadto sprawdzaj datę ostatniego logowania do systemu; jest ona prezentowana w stopce strony po zalogowaniu oraz w sekcji "Ustawienia/Rejestr zdarzeń".</li>
+                <p><strong>Włącz ochronę anty-phishingową w przeglądarce:</strong></p><ul><li>Nie ignoruj ostrzeżeń.</li><li>W nowych wersjach popularnych przeglądarek dostępne są specjalne narzędzia sprawdzające, czy wyświetlona strona internetowa nie ma na celu wyłudzenia poufnych informacji.</li><li>Są to tak zwane filtry anty-phishingowe. Nie dają one co prawda pełnej gwarancji, że dana strona jest na pewno bezpieczna, pozwalają jednak ograniczyć ryzyko kradzieży poufnych danych.</li><ul><li class="header"><strong>Aby włączyć ochronę anty-phishingową w przeglądarce:</strong></li><li class="header"><strong>Internet Explorer</strong></li><li>Wejdź w Narzędzia - Filtr witryn wyłudzających informacje i wybierz opcję "Włącz automatyczne sprawdzanie sieci Web".</li><li class="header"><strong>Firefox</strong></li><li>Wejdź w Narzędzia - Opcje - Bezpieczeństwo i zaznaczyć opcje: Ostrzegaj, jeśli witryny próbują zainstalować dodatki; Blokuj witryny zgłoszone jako stwarzające zagrożenie oraz Blokuj witryny zgłoszone jako próby oszustwa internetowego.</li><li class="header"><strong>Opera</strong></li><li>Wejdź w Narzędzia - Preferencje - Zaawansowane - Bezpieczeństwo, a następnie zaznacz opcję: "Włącz ochronę przed oszustwami i złośliwym oprogramowaniem".</li></ul></ul>
+                <p><strong>Pamiętaj, Bank nigdy nie będzie:</strong></p><ul><li>przekazywał poufnych informacji dotyczących korzystania z bankowości elektronicznej i zmian w procedurach bezpieczeństwa w wiadomościach e-mail wysyłanych na prywatne skrzynki e-mail;</li><li>prosił o podanie nazwy producenta, modelu i numeru telefonu podczas logowania do serwisu internetowego, aplikacji mobilnej i serwisu mobilnego;</li><li>prosił o wykonywanie w ramach testów przelewów lub innych operacji związanych z PekaoBiznes24.</li></ul>
+            </ul<li></div>
+        </div>
+    </div>
+</div>
+
+<div id="warningsSubmodal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a href="#" class="header-element active">BEZPIECZEŃSTWO</a>
+                    <span class="bold-line"></span>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')" class="header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')" class="header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#warningsSubmodal')"></a>
+        <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')" class="sprite sprite-previous"></a>
+    </div>
+    <div class="security row">
+        <div class="col-xs-4 communiques scrollable full-height">
+            <ul>
+                <a data-target="#softwareSubmodal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Sprzęt i aplikacje</div>
+                    </li>
+                </a>
+                <a data-target="#privacySubmodal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ochrona poufnych danych</div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="menu-item active">
+                        <div class="name">Ostrzeżenia o zagrożeniach</div>
+                    </li>
+                </a>
+                <a data-target="#operationAuthorizationSubmodal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Autoryzacja operacji</div>
+                    </li>
+                </a>
+                <a data-target="#abuseSubmodal" data-toggle="modal" onclick="closeModal('#warningsSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Podejrzenie nadużycia</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-xs-8 full-height">
+            <div class="regulations-short-text scrollable">
+                <p>Uważnie czytaj komunikaty dotyczące bezpieczeństwa umieszczone na stronie logowania, ekrany prezentowane bezpośrednio po zalogowaniu do Systemu PekaoBiznes24 oraz wiadomości w poczcie wewnętrznej. Będziesz w nich informowany o aktualnych zagrożeniach czy możliwych próbach ataków socjotechnicznych. W sprawach dotyczących np. podejrzenia realizacji transakcji oszukańczych nieuprawnioną osobę Bank może również skontaktować się z Tobą telefonicznie.</p><ul><li>W przypadku powzięcia przez Bank informacji, iż dane niezbędne do logowania lub autoryzacji transakcji znalazły się w posiadaniu osoby trzeciej dostęp do usługi PekaoBiznes24 może zostać niezwłocznie zablokowany. Zostaniesz o tym poinformowany w czasie próby zalogowania lub telefonicznie na telefon kontaktowy.</li></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="operationAuthorizationSubmodal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a href="#" class="header-element active">BEZPIECZEŃSTWO</a>
+                    <span class="bold-line"></span>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')" class="header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')" class="header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#operationAuthorizationSubmodal')"></a>
+        <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')" class="sprite sprite-previous"></a>
+    </div>
+    <div class="security row">
+        <div class="col-xs-4 communiques scrollable full-height">
+            <ul>
+                <a data-target="#softwareSubmodal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Sprzęt i aplikacje</div>
+                    </li>
+                </a>
+                <a data-target="#privacySubmodal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ochrona poufnych danych</div>
+                    </li>
+                </a>
+                <a data-target="#warningsSubmodal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ostrzeżenia o zagrożeniach</div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="menu-item active">
+                        <div class="name">Autoryzacja operacji</div>
+                    </li>
+                </a>
+                <a data-target="#abuseSubmodal" data-toggle="modal" onclick="closeModal('#operationAuthorizationSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Podejrzenie nadużycia</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-xs-8 full-height">
+            <div class="regulations-short-text scrollable">
+                <ul><li>Operacje finansowe wykonywane w Systemie PekaoBiznes24 wymagają autoryzacji. Sposób autoryzacji określone są w regulaminie korzystanie z PekaoBiznes24.</li><li>W Systemie PekaoBiznes24 możesz zlecać m.in. przelewy krajowe i zagraniczne oraz inne transakcje finansowe. Po wypełnieniu odpowiedniego formularza transakcji zawsze sprawdź poprawność wprowadzonych danych na ekranie pośrednim, w komponencie autoryzującym oraz w wiadomości z kodem SMS. Jeżeli są zgodne, to zaakceptuj przelew zgodnie z używaną metodą autoryzacji. Po zaakceptowaniu otrzymasz informację o przyjęciu przelewu do realizacji.</li></ul><p>W celu dodatkowej weryfikacji niektórych operacji Bank może wstrzymać realizację transakcji do momentu potwierdzenia jej telefonicznie dzwoniąc na numer zaufany/numer podany przez firmę do kontaktów z Bankiem. Moment dokonania poprawnej dodatkowej weryfikacji operacji traktowany jest się jako moment autoryzacji, określający termin otrzymania przez Bank zlecenia do realizacji.</p><ul><li>W przypadku uznania transakcji za podejrzaną, operację uznaje się za niezłożoną, o czym zostaniesz poinformowany już w trakcie rozmowy.</li><li>Nie ma możliwości odwołania operacji po dokonaniu jej autoryzacji, za wyjątkiem przelewów z datą przyszłą lub cyklicznych, które mogą być odwołane najpóźniej do końca dnia poprzedzającego dzień realizacji wynikający z określonego cyklu lub przyszłej daty realizacji. Szczegółowy opis procesu realizacji przelewów znajdziesz w "Instrukcji systemu PekaoBiznes24".</li><li>Jeżeli powód odmowy wynika z przyczyn zależnych od  Banku niezwłocznie poinformujemy Cię o odmowie wykonania zlecenia transakcji podając, powód odmowy oraz procedurę sprostowania błędów stanowiących przyczynę odmowy:</li><ul><li>- poprzez System PekaoBiznes24 - status realizacji transakcji,</li><li>- poprzez kontakt telefoniczny na podany w umowie numer telefonu do kontaktu z Bankiem,</li><li>- wiadomością systemową.</li></ul><li>W przypadku autoryzacji kodami SMS zawsze sprawdzaj, czy wiadomość z kodem autoryzacyjnym jest zgodna z wykonywaną przez Ciebie operacją.</li><li>Jeśli korzystasz z karty lub tokena sprzętowego, pamiętaj aby nigdy nie podawać numeru PIN osobom nieuprawnionym. Bank nie wysyła wiadomości e-mail z prośbą o podanie tych informacji.</li><li>Numery PIN do karty, i aplikacji mobilnej powinny różnić się od PIN-u, którego używasz w serwisie telefonicznym i inne niż PIN do telefonu. Wybierz kombinację cyfr trudniejszą do odgadnięcia niż data Twoich urodzin.</li></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="abuseSubmodal" class="modal fade full-height bg-modal infotabs container-fluid" data-backdrop="static">
+    <div class="row infotabs-header">
+        <div class="button-panel">
+            <ul class="bg-login">
+                <li>
+                    <a href="#" class="header-element active">BEZPIECZEŃSTWO</a>
+                    <span class="bold-line"></span>
+                </li>
+                <li>
+                    <a data-target="#contactModal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')" class="header-element">KONTAKT</a>
+                </li>
+                <li>
+                    <a data-target="#privacyPolicyModal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')" class="header-element">POLITYKA PRYWATNOŚCI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-panel">
+        <div class="button-padding"></div>
+        <a href="#" class="close-button-nearme sprite-close pull-right" onclick="closeModal('#abuseSubmodal')"></a>
+        <a data-target="#securityModal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')" class="sprite sprite-previous"></a>
+    </div>
+    <div class="security row">
+        <div class="col-xs-4 communiques scrollable full-height">
+            <ul>
+                <a data-target="#softwareSubmodal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Sprzęt i aplikacje</div>
+                    </li>
+                </a>
+                <a data-target="#privacySubmodal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ochrona poufnych danych</div>
+                    </li>
+                </a>
+                <a data-target="#warningsSubmodal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Ostrzeżenia o zagrożeniach</div>
+                    </li>
+                </a>
+                <a data-target="#operationAuthorizationSubmodal" data-toggle="modal" onclick="closeModal('#abuseSubmodal')">
+                    <li class="menu-item">
+                        <div class="name">Autoryzacja operacji</div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="menu-item active">
+                        <div class="name">Podejrzenie nadużycia</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-xs-8 full-height">
+            <div class="regulations-short-text scrollable">
+                <p><strong>Utrata lub kradzież danych:</strong></p><p>W przypadku utraty lub podejrzenia utraty wyłącznej kontroli nad danymi do logowania lub urządzeniami do generowania kodów jednorazowych, lub ich kradzieży lub nieuprawnionego użycia (podejrzenia nieuprawnionego użycia) powinieneś niezwłocznie:</p><ul><li>skontaktować się z konsultantem PekaoBiznes24 pod numerami <strong>801 666 555</strong> lub <strong>+48 (22) 591 23 23</strong> (opłaty wg cennika operatora) w celu zablokowania dostępu do Systemu PekaoBiznes24 lub anulowania danych do logowania i autoryzacji zleceń lub</li><li>dokonać zmiany odpowiednio właściwego PIN lub hasła lub metody autoryzacji lub</li><li>zgłosić ten fakt w jednostce Banku.</li></ul><br><br><p><strong>Postępowanie w przypadku wystąpienia lub podejrzenia kradzieży:</strong></p><ul><li>Powiadom niezwłocznie Bank w przypadku stwierdzenia lub podejrzenia dokonania nieautoryzowanych transakcji na rachunku. Informuj o wszystkich podejrzanych zdarzeniach i nietypowych sytuacji zauważonych w trakcie korzystania z usług bankowości internetowych oraz o potencjalnych próbach ataków socjotechnicznych mających na celu np. wyłudzenie Twoich danych.</li><li>Jako próbę wyłudzenia poufnych danych należy traktować również wiadomości e-mail nakłaniające do ujawnienia informacji służących do logowania lub autoryzacji, danych umożliwiających bezpieczne korzystanie z usługi PekaoBiznes24 lub zawierającej linki do strony logowania, a także danych dotyczących kart płatniczych.</li><li>Niezwłocznie skontaktuj się z konsultantem PekaoBiznes24 pod numerem telefonu <strong>801 666 555</strong> lub <strong>+48 (22) 591 23 23</strong> (opłaty wg cennika operatora), który poradzi jak w danej sytuacji się zachować - kontakt jest możliwy przez całą dobę. Każde zgłoszenie będzie poddane szczegółowej analizie, o jej wyniku będziesz poinformowany w wybrany przez Ciebie sposób (np. pisemnie, telefonicznie, pocztą wewnętrzną w PekaoBiznes24).</li></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body></html>
