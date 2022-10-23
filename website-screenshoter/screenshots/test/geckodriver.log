@@ -1,0 +1,175 @@
+1666442354184	geckodriver	INFO	Listening on 127.0.0.1:57245
+1666442354190	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35379" "-no-remote" "-profile" "/tmp/rust_mozprofileuNReP0"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442354575	Marionette	INFO	Marionette enabled
+1666442354580	Marionette	INFO	Listening on port 37069
+WebDriver BiDi listening on ws://127.0.0.1:35379
+1666442354685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuNReP0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:35379/devtools/browser/54977730-f319-443d-be0b-e7b86ba5f103
+1666442391754	geckodriver	INFO	Listening on 127.0.0.1:33291
+1666442391762	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "44573" "-no-remote" "-profile" "/tmp/rust_mozprofileLbZ2JA"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442392286	Marionette	INFO	Marionette enabled
+1666442392295	Marionette	INFO	Listening on port 37765
+WebDriver BiDi listening on ws://127.0.0.1:44573
+1666442392447	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLbZ2JA/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44573/devtools/browser/8c071384-504a-4f3c-8d89-37c4898c7121
+1666442407285	geckodriver	INFO	Listening on 127.0.0.1:34233
+1666442407291	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42857" "-no-remote" "-profile" "/tmp/rust_mozprofileto7Fwv"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442407798	Marionette	INFO	Marionette enabled
+1666442407803	Marionette	INFO	Listening on port 43987
+WebDriver BiDi listening on ws://127.0.0.1:42857
+1666442407983	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileto7Fwv/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42857/devtools/browser/dfb7691c-da98-4162-b51d-944fc7bb7bba
+1666442460404	geckodriver	INFO	Listening on 127.0.0.1:38721
+1666442460411	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "48913" "-no-remote" "-profile" "/tmp/rust_mozprofileNf2qbS"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442460871	Marionette	INFO	Marionette enabled
+1666442460878	Marionette	INFO	Listening on port 34757
+WebDriver BiDi listening on ws://127.0.0.1:48913
+1666442461014	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNf2qbS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:48913/devtools/browser/9e19697b-5ea6-4da7-8935-5ac012d8e74f
+1666442538558	geckodriver	INFO	Listening on 127.0.0.1:37331
+1666442538564	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46021" "-no-remote" "-profile" "/tmp/rust_mozprofileLepedG"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442539040	Marionette	INFO	Marionette enabled
+1666442539046	Marionette	INFO	Listening on port 38991
+WebDriver BiDi listening on ws://127.0.0.1:46021
+1666442539152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLepedG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:46021/devtools/browser/b98f7be5-0cb6-4248-a07d-61c62a85d7c3
+1666442556566	geckodriver	INFO	Listening on 127.0.0.1:35397
+1666442556575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46851" "-no-remote" "-profile" "/tmp/rust_mozprofiledNHK4q"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442557028	Marionette	INFO	Marionette enabled
+1666442557034	Marionette	INFO	Listening on port 37633
+WebDriver BiDi listening on ws://127.0.0.1:46851
+1666442557172	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledNHK4q/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:46851/devtools/browser/80a7bc57-3788-44d5-8bd9-341b04c5455a
+1666442560919	Marionette	INFO	Stopped listening on port 37633
+1666442766364	geckodriver	INFO	Listening on 127.0.0.1:35947
+1666442766371	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "36057" "-no-remote" "-profile" "/tmp/rust_mozprofileRRU9ob"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442767101	Marionette	INFO	Marionette enabled
+1666442767108	Marionette	INFO	Listening on port 33887
+WebDriver BiDi listening on ws://127.0.0.1:36057
+1666442767231	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRRU9ob/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36057/devtools/browser/d6feba7a-8794-4777-a00b-7d31a12fb4ad
+1666442836226	geckodriver	INFO	Listening on 127.0.0.1:44843
+1666442836231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59185" "-no-remote" "-profile" "/tmp/rust_mozprofileyOkwRB"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442836774	Marionette	INFO	Marionette enabled
+1666442836779	Marionette	INFO	Listening on port 43291
+WebDriver BiDi listening on ws://127.0.0.1:59185
+1666442836961	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyOkwRB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59185/devtools/browser/c57676df-0850-4c01-8923-612ea6b99fff
+1666442863651	geckodriver	INFO	Listening on 127.0.0.1:49813
+1666442863657	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "51633" "-no-remote" "-profile" "/tmp/rust_mozprofiled69gTk"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666442864248	Marionette	INFO	Marionette enabled
+1666442864256	Marionette	INFO	Listening on port 46467
+WebDriver BiDi listening on ws://127.0.0.1:51633
+1666442864453	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiled69gTk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51633/devtools/browser/6881e421-5b44-41ff-b76a-ed93344d8c11
+1666442868005	Marionette	INFO	Stopped listening on port 46467
+1666443099240	geckodriver	INFO	Listening on 127.0.0.1:46383
+1666443099245	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "52245" "-no-remote" "-profile" "/tmp/rust_mozprofile4GfWxi"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666443099632	Marionette	INFO	Marionette enabled
+1666443099638	Marionette	INFO	Listening on port 45213
+WebDriver BiDi listening on ws://127.0.0.1:52245
+1666443099746	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4GfWxi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52245/devtools/browser/e94a4aef-4550-47f6-a6d2-50eafc7b070d
+1666443110920	geckodriver	INFO	Listening on 127.0.0.1:34121
+1666443110926	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41927" "-no-remote" "-profile" "/tmp/rust_mozprofilewuAYvM"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666443111438	Marionette	INFO	Marionette enabled
+1666443111443	Marionette	INFO	Listening on port 34313
+WebDriver BiDi listening on ws://127.0.0.1:41927
+1666443111592	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewuAYvM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41927/devtools/browser/1bd3cb68-ac50-4f0c-99ff-e810cc96444d
+JavaScript error: https://www.pekao.com.pl/ line 408 > injectedScript, line 3: ReferenceError: cookieIdName is not defined
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://www.santander.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=414945573, line 1: unreachable code after return statement
+JavaScript warning: https://www.santander.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=414945573, line 1: unreachable code after return statement
+JavaScript warning: https://www.santander.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=414945573, line 1: unreachable code after return statement
+JavaScript warning: https://www.santander.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=414945573 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.santander.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=414945573 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.ing.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=889183447, line 1: unreachable code after return statement
+JavaScript warning: https://www.ing.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=889183447, line 1: unreachable code after return statement
+JavaScript warning: https://www.ing.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=889183447, line 1: unreachable code after return statement
+JavaScript warning: https://www.ing.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=889183447 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.ing.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=889183447 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.mbank.pl/.templates/js/mobile-app-widget.js?config=1&48fa6217ea8c19199afdc7531b6092aa, line 6: unreachable code after return statement
+JavaScript warning: https://www.mbank.pl/.templates/js/antichurn-questionnaire.js?4ebcc711382ba9fac7cbf00ece86c474, line 7: unreachable code after return statement
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yO/l/en_US/cAVoixFLPXx.js?_nc_x=Ij3Wp8lg5Kz, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.facebook.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://www.gaz-system.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=488960045, line 1: unreachable code after return statement
+JavaScript warning: https://www.gaz-system.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=488960045, line 1: unreachable code after return statement
+JavaScript warning: https://www.gaz-system.pl/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=488960045 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.lotos.pl/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.revolut.com/_next/static/chunks/main-cb3017b64a57858a.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: https://www.tauron.pl/assets/third_parts/requirejs/require.min.js, line 5: Error: Script error for "language-data"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.tauron.pl/assets/third_parts/requirejs/require.min.js, line 5: Error: Script error for "ls-bgset"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.tauron.pl/assets/third_parts/requirejs/require.min.js, line 5: Error: Script error for "sendLocation"
+http://requirejs.org/docs/errors.html#scripterror
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2196,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2196","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1106","resource:///modules/ContentCrashHandlers.jsm:observe:183"]}] Barrier: quit-application-granted
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2196,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2196","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1106","resource:///modules/ContentCrashHandlers.jsm:observe:183"]}] Barrier: quit-application-granted
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2196,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2196","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1106","resource:///modules/ContentCrashHandlers.jsm:observe:183"]}] Barrier: quit-application-granted
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2196,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2196","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1106","resource:///modules/ContentCrashHandlers.jsm:observe:183"]}] Barrier: quit-application-granted
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2196,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2196","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1106","resource:///modules/ContentCrashHandlers.jsm:observe:183"]}] Barrier: quit-application-granted
+1666449811069	Marionette	INFO	Stopped listening on port 43987
+1666449811069	Marionette	INFO	Stopped listening on port 37765
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1666449812664	Marionette	INFO	Stopped listening on port 34313
+1666449816337	Marionette	INFO	Stopped listening on port 45213
+1666449818399	Marionette	INFO	Stopped listening on port 33887
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1666449821369	Marionette	INFO	Stopped listening on port 38991
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down

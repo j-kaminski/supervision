@@ -1,0 +1,14 @@
+1666440533758	geckodriver	INFO	Listening on 127.0.0.1:52031
+1666440533763	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "49917" "-no-remote" "-profile" "/tmp/rust_mozprofile5dj7dC"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1666440534120	Marionette	INFO	Marionette enabled
+1666440534124	Marionette	INFO	Listening on port 36579
+WebDriver BiDi listening on ws://127.0.0.1:49917
+1666440534227	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5dj7dC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49917/devtools/browser/2047ebfe-be73-4332-8493-23780edd4235
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 183: TypeError: this._element is null
+1666440536267	Marionette	INFO	Stopped listening on port 36579
